@@ -59,7 +59,7 @@
             }
             .cell
             {
-                border-radius: 10px;
+                border-radius: 4px;
                 width: 40px;
                 border: 1px solid black;
                 background-color: rgb(255, 255, 255);
@@ -71,8 +71,8 @@
             .cell-number
             {
                 background-color: rgb(238, 237, 237);
-                border-top-right-radius: 10px;
-                border-top-left-radius: 10px;
+                border-top-right-radius: 4px;
+                border-top-left-radius: 4px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -89,20 +89,32 @@
                 align-items: center;
                 background-color: rgb(255, 255, 255);
                 justify-content: top;
-                border-radius: 10px;
+                border-radius: 4px;
                 height: 525px;
-                margin-top: 10px;
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+            ::-webkit-scrollbar
+            {
+                width: 6px;
+            }
+            ::-webkit-scrollbar-thumb
+            {
+                background-color: rgb(192, 189, 189);
+                border-radius: 5px;
             }
             .cell-element
             {
-                margin-top: 4px;
+                margin-top: 2px;
+                margin-bottom: 2px;
+                margin-left: 5px;
                 background-color: rgb(224, 233, 233);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 /* position: absolute; */
                 font-size: 25px;
-                border-radius: 10px;
+                border-radius: 4px;
                 width: 180px;
                 border: 1px solid gray;
             }
@@ -112,7 +124,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                border-radius: 10px;
+                border-radius: 4px;
                 background-color: rgb(243, 236, 237);
                 font-size: 30px;
             }  
@@ -121,9 +133,19 @@
                 background-color: rgb(240, 238, 238);
                 width: 198px;
                 border-top: 1px solid black;
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                opacity: 0.8;
             } 
+            .plus-button:hover
+            {
+                opacity: 2;
+                background-color: red;
+            }
+            .plus-button:active
+            {
+                box-shadow: inset 1px 2px 3px rgba(0,0,0,0.15);
+            }
             .plus-img
             {
                 margin-top: 0px;
@@ -163,169 +185,218 @@
         <div class="pic">
             <div class="khung-grid">
                 <div class="cell">
-                    <div class="cell-number" style="background-color: lightpink;">
+                    <div class="cell-number" style="background-color: #f8d2df;">
                         Thứ 2
                     </div>
                     <div class="cell-mention">
-                        <div class="cell-element" style="background-color: lightpink;">
+                        <div class="cell-element" style="background-color: #f8d2df;">
                             Thịt
                         </div>
-                        <div class="cell-element" style="background-color: lightpink;">
+                        <div class="cell-element" style="background-color: #f8d2df;">
                             Rau
                         </div>
-                        <div class="cell-element" style="background-color: lightpink;">
+                        <div class="cell-element" style="background-color: #f8d2df;">
                             Cá
                         </div>
-                        <div class="cell-element" style="background-color: lightpink;">
+                        <div class="cell-element" style="background-color: #f8d2df">
                             Dưa
                         </div>
+                        <div class="cell-element" style="background-color: #f8d2df;">
+                            Thịt
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df;">
+                            Rau
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df;">
+                            Cá
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df">
+                            Dưa
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df;">
+                            Thịt
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df;">
+                            Rau
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df;">
+                            Cá
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df">
+                            Dưa
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df;">
+                            Thịt
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df;">
+                            Rau
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df;">
+                            Cá
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df">
+                            Dưa
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df;">
+                            Thịt
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df;">
+                            Rau
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df;">
+                            Cá
+                        </div>
+                        <div class="cell-element" style="background-color: #f8d2df">
+                            Dưa
+                        </div>
+
                     </div>
                     <div class="cell-add">
-                        <button class="plus-button" style="background-color: lightpink;">
+                        <button class="plus-button" style="background-color: #f8d2df">
                             <img class="plus-img" src="pic/img_428886.png" alt="">
                         </button>
                     </div>
                 </div>
                 <div class="cell">
-                    <div class="cell-number" style="background-color: lightblue;">
+                    <div class="cell-number" style="background-color: #b5d4fe;">
                         Thứ 3
                     </div>
                     <div class="cell-mention">
-                        <div class="cell-element" style="background-color: lightblue;">
+                        <div class="cell-element" style="background-color: #b5d4fe;">
                             Thịt
                         </div>
-                        <div class="cell-element" style="background-color: lightblue;">
+                        <div class="cell-element" style="background-color: #b5d4fe;">
                             Rau
                         </div>
-                        <div class="cell-element" style="background-color: lightblue;">
+                        <div class="cell-element" style="background-color: #b5d4fe;">
                             Cá
                         </div>
-                        <div class="cell-element" style="background-color: lightblue;">
+                        <div class="cell-element" style="background-color: #b5d4fe;">
                             Dưa
                         </div>
                     </div>
                     <div class="cell-add">
-                        <button class="plus-button" style="background-color: lightblue;">
+                        <button class="plus-button" style="background-color: #b5d4fe;">
                             <img class="plus-img" src="pic/img_428886.png" alt="">
                         </button>
                     </div>
                 </div>
                 <div class="cell">
-                    <div class="cell-number" style="background-color: lightgreen;">
+                    <div class="cell-number" style="background-color: #e0ecd5;">
                         Thứ 4
                     </div>
                     <div class="cell-mention">
-                        <div class="cell-element" style="background-color: lightgreen;">
+                        <div class="cell-element" style="background-color: #e0ecd5;">
                             Thịt
                         </div>
-                        <div class="cell-element" style="background-color: lightgreen;">
+                        <div class="cell-element" style="background-color: #e0ecd5;">
                             Rau
                         </div>
-                        <div class="cell-element" style="background-color: lightgreen;">
+                        <div class="cell-element" style="background-color: #e0ecd5;">
                             Cá
                         </div>
-                        <div class="cell-element" style="background-color: lightgreen;">
+                        <div class="cell-element" style="background-color: #e0ecd5;">
                             Dưa
                         </div>
                     </div>
                     <div class="cell-add">
-                        <button class="plus-button" style="background-color: lightgreen;">
+                        <button class="plus-button" style="background-color: #e0ecd5;">
                             <img class="plus-img" src="pic/img_428886.png" alt="">
                         </button>
                     </div>
                 </div>
                 <div class="cell">
-                    <div class="cell-number" style="background-color: lightyellow;">
+                    <div class="cell-number" style="background-color: #ccf1fc;">
                         Thứ 5
                     </div>
                     <div class="cell-mention">
-                        <div class="cell-element" style="background-color: lightyellow;">
+                        <div class="cell-element" style="background-color: #ccf1fc;">
                             Thịt
                         </div>
-                        <div class="cell-element" style="background-color: lightyellow;">
+                        <div class="cell-element" style="background-color: #ccf1fc;">
                             Rau
                         </div>
-                        <div class="cell-element" style="background-color: lightyellow;">
+                        <div class="cell-element" style="background-color: #ccf1fc;">
                             Cá
                         </div>
-                        <div class="cell-element" style="background-color: lightyellow;">
+                        <div class="cell-element" style="background-color: #ccf1fc;">
                             Dưa
                         </div>
                     </div>
                     <div class="cell-add">
-                        <button class="plus-button" style="background-color: lightyellow;">
+                        <button class="plus-button" style="background-color: #ccf1fc;">
                             <img class="plus-img" src="pic/img_428886.png" alt="">
                         </button>
                     </div>
                 </div>
                 <div class="cell">
-                    <div class="cell-number" style="background-color: lightcoral;">
+                    <div class="cell-number" style="background-color: #d8cbfd;">
                         Thứ 6
                     </div>
                     <div class="cell-mention">
-                        <div class="cell-element" style="background-color: lightcoral;">
+                        <div class="cell-element" style="background-color: #d8cbfd;">
                             Thịt
                         </div>
-                        <div class="cell-element" style="background-color: lightcoral;">
+                        <div class="cell-element" style="background-color: #d8cbfd;">
                             Rau
                         </div>
-                        <div class="cell-element" style="background-color: lightcoral;">
+                        <div class="cell-element" style="background-color: #d8cbfd;">
                             Cá
                         </div>
-                        <div class="cell-element" style="background-color: lightcoral;">
+                        <div class="cell-element" style="background-color: #d8cbfd;">
                             Dưa
                         </div>
                     </div>
                     <div class="cell-add">
-                        <button class="plus-button" style="background-color: lightcoral;">
+                        <button class="plus-button" style="background-color: #d8cbfd;">
                             <img class="plus-img" src="pic/img_428886.png" alt="">
                         </button>
                     </div>
                 </div>
                 <div class="cell">
-                    <div class="cell-number" style="background-color: lightsalmon;">
+                    <div class="cell-number" style="background-color: rgb(253, 185, 159);">
                         Thứ 7
                     </div>
                     <div class="cell-mention">
-                        <div class="cell-element" style="background-color: lightsalmon;">
+                        <div class="cell-element" style="background-color: rgb(253, 185, 159);">
                             Thịt
                         </div>
-                        <div class="cell-element" style="background-color: lightsalmon;">
+                        <div class="cell-element" style="background-color: rgb(253, 185, 159);">
                             Rau
                         </div>
-                        <div class="cell-element" style="background-color: lightsalmon;">
+                        <div class="cell-element" style="background-color: rgb(253, 185, 159);">
                             Cá
                         </div>
-                        <div class="cell-element" style="background-color: lightsalmon;">
+                        <div class="cell-element" style="background-color: rgb(253, 185, 159);">
                             Dưa
                         </div>
                     </div>
                     <div class="cell-add">
-                        <button class="plus-button" style="background-color: lightsalmon;">
+                        <button class="plus-button" style="background-color: rgb(253, 185, 159);">
                             <img class="plus-img" src="pic/img_428886.png" alt="">
                         </button>
                     </div>
                 </div>
                 <div class="cell">
-                    <div class="cell-number" style="background-color: lightblue;">
+                    <div class="cell-number" style="background-color: #f8feb5;">
                         Chủ Nhật
                     </div>
                     <div class="cell-mention">
-                        <div class="cell-element" style="background-color: lightblue;">
+                        <div class="cell-element" style="background-color: #f8feb5;">
                             Thịt
                         </div>
-                        <div class="cell-element" style="background-color: lightblue;"> 
+                        <div class="cell-element" style="background-color: #f8feb5;"> 
                             Rau
                         </div>
-                        <div class="cell-element" style="background-color: lightblue;">
+                        <div class="cell-element" style="background-color: #f8feb5;">
                             Cá
                         </div>
-                        <div class="cell-element" style="background-color: lightblue;">
+                        <div class="cell-element" style="background-color: #f8feb5;">
                             Dưa
                         </div>
                     </div>
                     <div class="cell-add">
-                        <button class="plus-button" style="background-color: lightblue;">
+                        <button class="plus-button" style="background-color: #f8feb5;">
                             <img class="plus-img" src="pic/img_428886.png" alt="">
                         </button>
                     </div>
