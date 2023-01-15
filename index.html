@@ -1,229 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Youtube</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/sidebar.css">
-    <link rel="stylesheet" href="styles/video.css">
-</head>
-<body>
-    <div class="header">
-        <div class="left-section">
-            <img class="hamburger-menu" src="icons/hamburger-menu.svg">
-            <img class="youtube-logo" src="icons/youtube-logo.svg">
-        </div>
-        <div class="middle-section">
-            <input class="search-bar" type="text" placeholder="Search">
-            <button class="search-button">
-                <img class="search-icon" src="icons/search.svg">
-                <div class="tooltip">
-                    Search
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <title>SoTaySucKhoe_Demo</title>
+        <style>
+            p{
+                font-family: Roboto,Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                line-height: 20px;
+            }
+            .font-write
+            {
+                
+                vertical-align: top;
+            }
+            .tintuc-grid
+            {
+                column-gap: 10px;
+                display: grid;
+                grid-template-columns: 200px 1fr;
+            }
+            .khung-grid
+            {
+                margin-top: 10px;
+                row-gap: 10px;
+                margin-left: 300px;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+            }
+            .ima
+            {
+                width: 200px;
+                height: 200px;
+                border-radius: 10px;
+            }
+            .nut
+            {
+                border: #065fd4;
+                padding: 10px 20px;
+                border-radius: 2px;
+                font-weight: 500;
+                font-size: 15px;
+                color: #065fd4;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar-container">
+            <div class="navbar">
+                <div class="navbar-left">
+                    <svg
+                        class="block"
+                        focusable="false"
+                        height="100%"
+                        viewBox="0 0 62 62"
+                        width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <circle cx="31" cy="31" fill="#fff" r="30.002"></circle>
+                        <img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://scontent.fdad4-1.fna.fbcdn.net/v/t1.15752-9/324407389_707274027477627_8731123341976114818_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=ae9488&amp;_nc_ohc=rjtu6LlPvW8AX8Xja3l&amp;tn=UzWXfHFlac9hyeeL&amp;_nc_ht=scontent.fdad4-1.fna&amp;oh=03_AdTS9ynEjsU0omjClprFqZYdpIfRUvqxnNc1xKWxBfJCkQ&amp;oe=63E8A9A2" width="91" height="73">
+                    </svg>
+                    <div>Trang Chủ</div>
+                    <div>Lịch</div>
+                    <div>Tin Tức</div>
+                    <div>Phân loại</div>
+                    <div>Đã Lưu</u></div>
                 </div>
-            </button>
-            <button class="voice-search-button">
-                <img class="voice-icon" src="icons/voice-search-icon.svg">
-                <div class="tooltip">
-                    Search with your voice
-                </div>
-            </button>
-        </div>
-        <div class="right-section">
-            <img class="upload-icon" src="icons/upload.svg" alt="">
-            <img class="app-icon" src="icons/youtube-apps.svg" alt="">
-            <div class="notification-icon-container">
-                <img class="notification-icon" src="icons/notifications.svg" alt="">
-                <div class="notification-count">
-                    3
-                </div>
-            </div>
-            
-            <img class="channel-icon" src="author-pic/my-channel.jpeg" alt="">
-        </div>
-        
-    </div>
-    <div class="sidebar">
-        <div class="sidebar-icon">
-            <div class="sidebar-link">
-                <img class="home-icon" src="icons/home.svg" alt="">
-                Home
-            </div>
-            <div class="sidebar-link">
-                <img class="home-icon" src="icons/explore.svg" alt="">
-                Explode
-            </div>
-            <div class="sidebar-link">
-                <img class="home-icon" src="icons/subscriptions.svg" alt="">
-                Subscriptions
-            </div>
-            <div class="sidebar-link">
-                <img class="home-icon" src="icons/originals.svg" alt="">
-                Originals
-            </div>
-            <div class="sidebar-link">
-                <img class="home-icon" src="icons/youtube-music.svg" alt="">
-                Youtube Music
-            </div>
-            <div class="sidebar-link">
-                <img class="home-icon" src="icons/library.svg" alt="">
-                Library
-            </div>
-            
-            
-           
-           
-            
-            
-        </div>
-    </div>
-    <div class="video-grid">
-        <div class="video-preview">
-            <div class="thumnail-pic">
-                <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-                <div class="time">
-                    14:20
-                </div>
-            </div>
-            <div class="video-info-grid">
-                <div class="author-picture">
-                    <img class="author" src="author-pic/channel-1.jpeg">
-                </div>
-                <div class="info">
-                    <p class="video-title">
-                        Talking Tech and AI with Google CEO Sundar Pichai!
-                    </p>
-                    <p class="video-author">
-                        Marques Brownlee 
-                    </p>
-                    <p class="video-stats">
-                        3.4M views &#183; 6 months ago
-                    </p>
+                <div class="navbar-right">
+                    <div class="sign-in">Đăng Nhập</div>
+                    <div class="join-now">Đăng Ký</div>
                 </div>
             </div>
         </div>
-        <div class="video-preview">
-            <div class="thumnail-pic">
-                <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-                <div class="time">
-                    8:22
+        <div class="pic">
+            <div class="khung-grid">
+                <div class="tintuc-grid">
+                    <div > 
+                        <img class="ima" src="pic/banh-chung-200.jpg">
+                    </div>
+                    <div class="font-write">
+                        <p>
+                            10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết
+                        </p>
+                        <p>
+                            Tác Giả: Thiên Anh
+                        </p>
+                        <p>
+                            Editer: Hoàng Thức
+                        </p>
+                        <button class="nut">LƯU</button>
+                    </div>
                 </div>
-            </div>
-            <div class="video-info-grid">
-                <div class="author-picture">
-                    <img class="author" src="author-pic/channel-2.jpeg">
+                <div class="tintuc-grid">
+                    <div > 
+                        <img class="ima" src="pic/healthcare-europe-1080x675.jpg">
+                    </div>
+                    <div class="font-write">
+                        <p>
+                            10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết
+                        </p>
+                        <p>
+                            Tác Giả: Thiên Anh
+                        </p>
+                        <p>
+                            Editer: Hoàng Thức
+                        </p>
+                        <button class="nut">LƯU</button>
+                    </div>
                 </div>
-                <div class="info">
-                    <p class="video-title">
-                        Try Not To Laugh Challenge #9
-                    </p>
-                    <p class="video-author">
-                        Markiplier
-                    </p>
-                    <p class="video-stats">
-                        19M views &#183; 4 years ago
-                    </p>
+                <div class="tintuc-grid">
+                    <div > 
+                        <img class="ima" src="pic/mam-ngu-qua-ngay-tet-200.webp">
+                    </div>
+                    <div class="font-write">
+                        <p>
+                            10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết
+                        </p>
+                        <p>
+                            Tác Giả: Thiên Anh
+                        </p>
+                        <p>
+                            Editer: Hoàng Thức
+                        </p>
+                        <button class="nut">LƯU</button>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="thumnail-pic">
-                <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
-                <div class="time">
-                    9:13
-                </div>
-            </div>
-            <div class="video-info-grid">
-                <div class="author-picture">
-                    <img class="author" src="author-pic/channel-3.jpeg">
-                </div>
-                <div class="info">
-                    <p class="video-title">
-                        Crazy Tik Toks Taken Moments Before DISASTER
-                    </p>
-                    <p class="video-author">                
-                        SSSniperWolf
-                    </p>
-                    <p class="video-stats">
-                        12M views &#183; 1 year ago
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="thumnail-pic">
-                <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
-                <div class="time">
-                    22:09
-                </div>
-            </div>
-            <div class="video-info-grid">
-                <div class="author-picture">
-                    <img class="author" src="author-pic/channel-4.jpeg">
-                </div>
-                <div class="info">
-                    <p class="video-title">
-                        The Simplest Math Problem No One Can Solve - Collatz Conjecture
-                    </p>
-                    <p class="video-author">              
-                        Veritasium
-                    </p>
-                    <p class="video-stats"> 
-                        18M views &#183; 4 months ago
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="thumnail-pic">
-                <img class="thumbnail" src="thumbnails/thumbnail-5.webp">
-                <div class="time">
-                    11:17
-                </div>
-            </div>
-            <div class="video-info-grid">
-                <div class="author-picture">
-                    <img class="author" src="author-pic/channel-5.jpeg">
-                </div>
-                <div class="info">
-                    <p class="video-title">
-                        Kadane's Algorithm to Maximum Sum Subarray Problem
-                    </p>
-                    <p class="video-author">                       
-                        CS Dojo
-                    </p>
-                    <p class="video-stats">  
-                        519K views &#183; 5 years ago
-                    </p>
+                <div class="tintuc-grid">
+                    <div > 
+                        <img class="ima" src="pic/312237948_1325772808233120_888198122789183354_n.png">
+                    </div>
+                    <div class="font-write">
+                        <p>
+                            10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết
+                        </p>
+                        <p>
+                            Tác Giả: Thiên Anh
+                        </p>
+                        <p>
+                            Editer: Hoàng Thức
+                        </p>
+                        <button class="nut">LƯU</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="video-preview">
-            <div class="thumnail-pic">
-                <img class="thumbnail" src="thumbnails/thumbnail-6.webp">
-                <div class="time">
-                    19:59
-                </div>
-            </div>
-            <div class="video-info-grid">
-                <div class="author-picture">
-                    <img class="author" src="author-pic/channel-6.jpeg">
-                </div>
-                <div class="info">
-                    <p class="video-title">
-                        Anything You Can Fit In The Circle I’ll Pay For
-                    </p>
-                    <p class="video-author">                 
-                        MrBeast
-                    </p>
-                    <p class="video-stats">             
-                        141M views &#183; 1 year ago
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
+        
