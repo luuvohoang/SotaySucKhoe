@@ -13,36 +13,66 @@
             body
             {
                 font-family: Roboto,Arial;
+                color: black;
             }
             p{
                 font-family: Roboto,Arial, Helvetica, sans-serif;
                 font-size: 25px;
                 line-height: 20px;
             }
-            .font-write
+
+            .pic
             {
-                
-                vertical-align: top;
-            }
-            .tintuc-grid
-            {
-                column-gap: 10px;
-                display: grid;
-                grid-template-columns: 200px 1fr;
+                position: relative;
             }
             .khung-grid
             {
+                position: absolute;
                 margin-top: 10px;
                 row-gap: 10px;
                 margin-left: 300px;
                 display: grid;
                 grid-template-rows: 1fr 1fr;
             }
-            .ima
+            .image
             {
                 width: 200px;
                 height: 200px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            .tintuc-grid
+            {
+                height: 200px;
+                background-color: white;
                 border-radius: 10px;
+                /* column-gap: 10px; */
+                display: grid;
+                grid-template-columns: 200px 1fr;
+            }
+            .font-write
+            {   
+                margin-top: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: left;
+                color: #000;   
+                vertical-align: top;
+                row-gap: 10px;
+                background-color: lightblue;
+                height: 200px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            .content
+            {
+                font-size: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: top;
+                align-items: top;
+                width: 710px;
             }
             .nut
             {
@@ -51,8 +81,8 @@
                 border-radius: 2px;
                 font-weight: 500;
                 font-size: 15px;
-                color: #065fd4;
-
+                color: black;
+                border-bottom-right-radius: 10px;
             }
             .topic-content .link-zip-trangchu
             {
@@ -102,12 +132,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-top: -20px;
+                margin-top: -20px; 
             }
             .topic-content
             {
                 position: relative;
             }
+
         </style>
     </head>
     <body>
@@ -153,76 +184,79 @@
             </div>
         </div>
         <div class="pic">
-            <div class="khung-grid">
-                <div class="tintuc-grid">
-                    <div > 
-                        <img class="ima" src="pic/banh-chung-200.jpg">
+            <section>
+                <div class="khung-grid">
+                    <div class="tintuc-grid">
+                        <div > 
+                            <img class="image" src="pic/banh-chung-200.jpg">
+                        </div>
+                        <div class="font-write">
+                            <div class="content">
+                                10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết 
+                            </div>
+                            <div class="content">
+                                Tác Giả: Thiên Anh
+                            </div>
+                            <div class="content">
+                                Editer: Hoàng Thức
+                            </div>
+                            <button class="nut">LƯU</button>
+                        </div>
                     </div>
-                    <div class="font-write">
-                        <p>
-                            10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết
-                        </p>
-                        <p>
-                            Tác Giả: Thiên Anh
-                        </p>
-                        <p>
-                            Editer: Hoàng Thức
-                        </p>
-                        <button class="nut">LƯU</button>
+                    <div class="tintuc-grid">
+                        <div > 
+                            <img class="image" src="pic/banh-chung-200.jpg">
+                        </div>
+                        <div class="font-write">
+                            <div class="content">
+                                10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết 
+                            </div>
+                            <div class="content">
+                                Tác Giả: Thiên Anh
+                            </div>
+                            <div class="content">
+                                Editer: Hoàng Thức
+                            </div>
+                            <button class="nut">LƯU</button>
+                        </div>
                     </div>
-                </div>
-                <div class="tintuc-grid">
-                    <div > 
-                        <img class="ima" src="pic/healthcare-europe-1080x675.jpg">
+                    <div class="tintuc-grid">
+                        <div > 
+                            <img class="image" src="pic/banh-chung-200.jpg">
+                        </div>
+                        <div class="font-write">
+                            <div class="content">
+                                10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết 
+                            </div>
+                            <div class="content">
+                                Tác Giả: Thiên Anh
+                            </div>
+                            <div class="content">
+                                Editer: Hoàng Thức
+                            </div>
+                            <button class="nut">LƯU</button>
+                        </div>
                     </div>
-                    <div class="font-write">
-                        <p>
-                            10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết
-                        </p>
-                        <p>
-                            Tác Giả: Thiên Anh
-                        </p>
-                        <p>
-                            Editer: Hoàng Thức
-                        </p>
-                        <button class="nut">LƯU</button>
+                    <div class="tintuc-grid">
+                        <div > 
+                            <img class="image" src="pic/banh-chung-200.jpg">
+                        </div>
+                        <div class="font-write">
+                            <div class="content">
+                                10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết 
+                            </div>
+                            <div class="content">
+                                Tác Giả: Thiên Anh
+                            </div>
+                            <div class="content">
+                                Editer: Hoàng Thức
+                            </div>
+                            <button class="nut">LƯU</button>
+                        </div>
                     </div>
-                </div>
-                <div class="tintuc-grid">
-                    <div > 
-                        <img class="ima" src="pic/mam-ngu-qua-ngay-tet-200.webp">
-                    </div>
-                    <div class="font-write">
-                        <p>
-                            10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết
-                        </p>
-                        <p>
-                            Tác Giả: Thiên Anh
-                        </p>
-                        <p>
-                            Editer: Hoàng Thức
-                        </p>
-                        <button class="nut">LƯU</button>
-                    </div>
-                </div>
-                <div class="tintuc-grid">
-                    <div > 
-                        <img class="ima" src="pic/312237948_1325772808233120_888198122789183354_n.png">
-                    </div>
-                    <div class="font-write">
-                        <p>
-                            10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết
-                        </p>
-                        <p>
-                            Tác Giả: Thiên Anh
-                        </p>
-                        <p>
-                            Editer: Hoàng Thức
-                        </p>
-                        <button class="nut">LƯU</button>
-                    </div>
-                </div>
-            </div>
+
+                </div>   
+            </section>
         </div>
     </body>
 </html>
