@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <link type="text/css" rel="stylesheet" href="style1.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+        <title>SoTaySucKhoe_Demo</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- <div id="plus-display-id" class="plus-display">
+        <div class="task-bar-plus">
+            <div class="search-bar-section">
+                <input class="search-bar-plus" type="text" placeholder="Tìm kiếm">
+                <button class="search-button-plus">
+                    <img class="search-img" src="pic/search.png" alt="">
+                </button>
+            </div>
+            <div>
+                <button id="close-button-plus-id" class="close-button-plus">
+                    <img class="search-img" src="pic/cross-button.png" alt="">
+                </button>
+                <script>
+                    $(document).ready(function()
+                    {
+                        $("#close-button-plus-id").click(function()
+                        {            
+                            $("#plus-display-id").fadeOut(600);
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+         <div class="mention-plus">
+            helloo
+        </div>
+        <div class="display-plus">
+            <div class="element-plus">
+                <div>
+                    <input class="checkbox-plus" type="checkbox">
+                </div>
+                <div class="name-food">
+                    Thịt bò
+                </div>
+                <div class="calo-gram">
+                    <p>171calo/100gram</p>
+                </div>
+            </div> 
+            <div class="element-plus">
+                <div>
+                    <input id="text-title" class="checkbox-plus" type="checkbox">
+                </div>
+                <div class="name-food">
+                    Thịt bò
+                </div>
+                <div class="calo-gram">
+                    <p>171calo/100gram</p>
+                </div>
+            </div> 
+        </div>
+        <div class="choose-plus">
+            <button onclick="addTodo()">  
+                <img class="plus-img" src="pic/plus-1.png" alt="">
+            </button>
+
+        </div>
+    </div>
+    <div class="cell"  style="margin-left: 200px;margin-top: 30px;">
+        <div class="cell-number" style="width: 200px;background-color: #f8d2df;">
+            Thứ 2
+        </div>
+        <div id="food-list" class="cell-mention" style="width: 200px;background-color: lightblue;">
+            <div class="cell-element" style="background-color: #f8d2df;">
+                Thịt
+            </div>
+        </div>
+        <div class="cell-add" style="width: 200px">
+            <button id="plus-button-id" class="plus-button" style="background-color: #f8d2df" id="plus-button" type="button">
+                <img  class="plus-img" src="pic/plus-1.png" alt="">
+            </button>
+            <script>
+                $(document).ready(function()
+                {
+                    $("#plus-button-id").click(function()
+                    {            
+                        $("#plus-display-id").fadeToggle(600);
+                    });
+                });
+            </script>
+        </div>
+    </div> -->
+    <div class="element-plus">
+        <div>
+            <input id="text-title" class="checkbox-plus" type="checkbox" name="Thịt bò" value="171">
+        </div>
+        <div class="name-food">
+            Thịt bò
+        </div>
+        <div>
+            <input id="input-id" class="gram-plus" type="text" placeholder="nhap so gram">
+        </div>
+        <div class="calo-gram">
+            <p>171calo/100gram</p>
+        </div>
+    </div> 
+    <div class="element-plus">
+        <div>
+            <input id="text-title" class="checkbox-plus" type="checkbox" name="Thịt gà" value="181">
+        </div>
+        <div class="name-food">
+            Thịt gà
+        </div>
+        <div>
+            <input id="input-id" class="gram-plus" type="text" placeholder="nhap so gram">
+        </div>
+        <div class="calo-gram">
+            <p>171calo/100gram</p>
+        </div>
+    </div> 
+    <div class="element-plus">
+        <div>
+            <input id="text-title" class="checkbox-plus" type="checkbox" name="Cá" value="191">
+        </div>
+        <div class="name-food">
+            Cá
+        </div>
+        <div>
+            <input id="input-id" class="gram-plus" type="text" placeholder="nhap so gram">
+        </div>
+        <div class="calo-gram">
+            <p>171calo/100gram</p>
+        </div>
+    </div> 
+    <div class="element-plus">
+        <div>
+            <input id="text-title" class="checkbox-plus" type="checkbox" name="Rau" value="91">
+        </div>
+        <div class="name-food">
+            Rau
+        </div>
+        <div>
+            <input id="input-id" class="gram-plus" type="text" placeholder="nhap so gram">
+        </div>
+        <div class="calo-gram">
+            <p>171calo/100gram</p>
+        </div>
+    </div> 
+    <button onclick="addTodo();">  
+        <img class="plus-img" src="pic/plus-1.png" alt="">
+    </button>
+    <input id="result-id" type="text" class="gram-plus">
+    <!-- <div id="food-list"></div> -->
+    <div id="food-list" class="cell-mention" style="width: 200px;background-color: lightblue;">
+    </div>
+        
+    <script>
+        // Model section 
+        // If localstorage has a todos array, then use it
+        // Otherwise use the default array.
+        let result = 0;
+        document.getElementById('result-id').value = result;
+        let todos = 
+            [
+                // {
+                //     foodName: 'Thịt bò',
+                //     id: 'id1'
+                // },
+                {
+                    foodName: 'Thịt heo',
+                    foodValue: 200,
+                    value: 200,
+                    id: 'id2'
+                }
+                // {
+                //     foodName: 'Thịt gà',
+                //     id: 'id3'
+                // }
+            ];
+        render();
+
+        function saveTodos()
+        {
+            //localStorage.setItem('todos',JSON.stringify(todos));
+        }
+
+        // // Controller section
+        function addTodo()
+        {
+            for(let i=0; i<2;i++)
+            {
+                const checkbox = document.querySelectorAll("[id='input-id']");
+                const textbox = document.querySelectorAll("[id='text-title']");
+                for(let i =0;i< textbox.length;i++)
+                {
+                    let flag = true;
+                    const foodName = textbox[i].name; 
+                    let value = checkbox[i].value;
+                    const foodValue = textbox[i].value;
+                
+                    if(value=="") value='0';
+                    //parseInt(value) += parseInt(0);
+                    //alert(value);
+                    const ticked = textbox[i].checked;
+                    // ticked and we will add it into display
+                    if(ticked)
+                    {
+                        
+                        for(let j =0;j< todos.length;j++)
+                        {
+                            // alert(todos[i].foodName);
+                            // alert(foodName);
+                            if(todos[j].foodName === foodName)
+                            {
+                                flag=false;
+                                //alert('bạn đã chọn thực phẩm này rồi :v');
+                                break;
+                            }
+                        }
+                        if(flag === true)
+                        {
+                            createTodo(foodName,foodValue,value,i);
+
+                            render();
+                        }
+
+                    }
+                }
+            }
+            for(let i = 0;i < todos.length;i++)
+            {
+                result+=parseFloat(todos[i].value)/parseFloat(100) *parseFloat(todos[i].foodValue);
+            }
+            document.getElementById('result-id').value = result + " calo";
+            result=0;
+
+        }
+        // Create a todo
+        function createTodo(foodName,foodValue,value,i)
+        {
+            let id = ' ' + (new Date().getTime()+i);
+            todos.push
+            (
+                {
+                    foodName: foodName,
+                    foodValue: foodValue,
+                    value: value,
+                    id: id
+                }
+            );
+            saveTodos();
+        }
+
+        function deleteTodo(event)
+        {
+            const deleteButton = event.target;
+            const idToDelete = deleteButton.id;
+
+            deleteTodoitem(idToDelete);
+            render();  
+            for(let i = 0;i < todos.length;i++)
+            {
+                result+=parseFloat(todos[i].value)/parseFloat(100) *parseFloat(todos[i].foodValue);
+            }
+            document.getElementById('result-id').value = result + " calo";
+            result=0;
+        }
+        // // Delete a todo 
+        function deleteTodoitem(idToDelete)
+        {
+            todos = todos.filter
+            (
+                function (todo)
+                {    
+                    // if the id of this todo match idToDelete,return false
+                    // for everything else, return true
+                    if(todo.id === idToDelete)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+            )
+            saveTodos();
+        }
+        // View section
+        function render()
+        {
+            // refresh the todo-list (id)
+            document.getElementById('food-list').innerHTML = '';
+
+            todos.forEach
+            (
+                function (todo)
+               {
+                    let element = document.createElement('div'); 
+                    element.innerText = todo.foodName;
+                    element.className = "cell-element";
+
+                    let deleteButton = document.createElement('button');
+                    deleteButton.innerText = 'X';
+                    deleteButton.style = "margin-left: 12px;width:20px;leight:20px;";
+                    deleteButton.onclick = deleteTodo;
+                    deleteButton.id = todo.id;
+                    element.appendChild(deleteButton);
+
+                    let todoList = document.getElementById('food-list');
+                    element.style = "background-color: white;"
+                    todoList.appendChild(element);
+               }
+            )
+        }
+    </script>
+    <!-- tinh toan -->
+</body>
+</html>
+<!-- </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-Learning</title>
+</head>
+<body>
+    <input id="text-title" type="text"/> 
+    <input id="date-picker" type="date"/>
+    <button onclick="addTodo()">Add Todo</button>
+
+    <div id="todo-list"></div>
+
+    <script>
+        // Model section 
+        // If localstorage has a todos array, then use it
+        // Otherwise use the default array.
+        let todos;
+
+        const savedTodos = JSON.parse(localStorage.getItem('todos'));
+        if(Array.isArray(savedTodos))
+        {
+            todos=savedTodos;
+        }
+        else
+        {
+                todos = 
+            [
+                {
+                    title: 'Get goceries',
+                    dueDate: '2021-10-04',
+                    id: 'id1'
+                },
+                {
+                    title: 'Wash car',
+                    dueDate: '2021-02-03',
+                    id: 'id2'
+                },
+                {
+                    title: 'Make dinner',
+                    dueDate: '2021-03-04',
+                    id: 'id3'
+                }
+            ];
+        }
+
+
+        render();
+
+        // Create a todo
+        function createTodo(title,dueDate)
+        {
+            const id = ' ' + new Date().getTime();
+            todos.push
+            (
+                {
+                    title: title,
+                    dueDate: dueDate,
+                    id: id
+                }
+            );
+            saveTodos();
+        }
+
+        // Delete a todo 
+        function deleteTodoitem(idToDelete)
+        {
+            todos = todos.filter
+            (
+                function (todo)
+                {    
+                    // if the id of this todo match idToDelete,return false
+                    // for everything else, return true
+                    if(todo.id === idToDelete)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+            )
+            saveTodos();
+        }
+        
+        function saveTodos()
+        {
+            localStorage.setItem('todos',JSON.stringify(todos));
+        }
+
+        // Controller section
+        function addTodo()
+        {
+            const textbox = document.getElementById('text-title');
+            const title = textbox.value; 
+
+            const datePicker = document.getElementById('date-picker');
+            const dueDate = datePicker.value;
+
+            createTodo(title,dueDate);
+
+            render();
+        }
+
+        function deleteTodo(event)
+        {
+            const deleteButton = event.target;
+            const idToDelete = deleteButton.id;
+
+            deleteTodoitem(idToDelete);
+
+            render();  
+        }
+
+        // View section
+        function render()
+        {
+            // refresh the todo-list (id)
+            document.getElementById('todo-list').innerHTML = '';
+
+            todos.forEach
+            (
+            function (todo)
+               {
+                    let element = document.createElement('div'); 
+                    element.innerText = todo.title + ' ' + todo.dueDate;
+
+                    let deleteButton = document.createElement('button');
+                    deleteButton.innerText = 'Delete';
+                    deleteButton.style = "margin-left: 12px;";
+                    deleteButton.onclick = deleteTodo;
+                    deleteButton.id = todo.id;
+                    element.appendChild(deleteButton);
+
+                    let todoList = document.getElementById('todo-list');
+                    todoList.appendChild(element);
+               }
+            )
+        }
+    </script> 
+</body>
+</html>     -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="cell-add">
+            <img id="plus-button-id" class="plus-img" src="pic/plus-1.png" alt="" style="background-color: lightpink;">
+        </div>
+    </header>
+    <div id="content-id" style="">
+        <div style="background-color: green;">
+            hoang
+        </div>
+        <div style="background-color: green;">
+            hoang
+        </div>
+        <div style="background-color: green;">
+            hoang
+        </div>
+        <div style="background-color: green;">
+            hoang
+        </div>
+    </div>
+    <script>
+        $(document).ready(function()
+        {
+            $("#plus-button-id").click(function()
+            {            
+                $("#content-id").toggle();
+            });
+        });
+    </script>
+</body>
+</html> -->

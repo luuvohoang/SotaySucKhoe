@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <title>SoTaySucKhoe_Demo</title>
+        <style>
+            body
+            {
+                font-family: Roboto,Arial;
+                color: black;
+            }
+            p{
+                font-family: Roboto,Arial, Helvetica, sans-serif;
+                font-size: 25px;
+                line-height: 20px;
+            }
+
+            .pic
+            {
+                position: relative;
+            }
+            .khung-grid
+            {
+                position: absolute;
+                margin-top: 10px;
+                row-gap: 10px;
+                margin-left: 300px;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+            }
+            .image
+            {
+                width: 200px;
+                height: 200px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            .tintuc-grid
+            {
+                height: 200px;
+                background-color: white;
+                border-radius: 10px;
+                /* column-gap: 10px; */
+                display: grid;
+                grid-template-columns: 200px 1fr;
+            }
+            .font-write
+            {   
+                margin-top: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: left;
+                color: #000;   
+                vertical-align: top;
+                row-gap: 10px;
+                background-color: lightblue;
+                height: 200px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            .content
+            {
+                font-size: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: top;
+                align-items: top;
+                width: 710px;
+            }
+            .nut
+            {
+                border: #065fd4;
+                padding: 10px 20px;
+                border-radius: 2px;
+                font-weight: 500;
+                font-size: 15px;
+                color: black;
+                border-bottom-right-radius: 10px;
+            }
+            .topic-content .link-zip-trangchu
+            {
+                position: absolute;
+                height: 20px;
+                width: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -20px;
+            }
+            .topic-content .link-zip-lich
+            {
+                position: absolute;
+                height: 20px;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -20px;
+            }
+            .topic-content .link-zip-tintuc
+            {
+                position: absolute;
+                height: 20px;
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -20px;
+            }
+            .topic-content .link-zip-phanloai
+            {
+                position: absolute;
+                height: 20px;
+                width: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -20px;
+            }
+            .topic-content .link-zip-daluu
+            {
+                position: absolute;
+                height: 20px;
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -20px; 
+            }
+            .topic-content
+            {
+                position: relative;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="navbar-container">
+            <div class="navbar">
+                <div class="navbar-left">
+                    <svg
+                        class="block"
+                        focusable="false"
+                        height="100%"
+                        viewBox="0 0 62 62"
+                        width="100%"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <circle cx="31" cy="31" fill="#fff" r="30.002"></circle>
+                        <img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://scontent.fdad4-1.fna.fbcdn.net/v/t1.15752-9/324407389_707274027477627_8731123341976114818_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=ae9488&amp;_nc_ohc=rjtu6LlPvW8AX8Xja3l&amp;tn=UzWXfHFlac9hyeeL&amp;_nc_ht=scontent.fdad4-1.fna&amp;oh=03_AdTS9ynEjsU0omjClprFqZYdpIfRUvqxnNc1xKWxBfJCkQ&amp;oe=63E8A9A2" width="91" height="73">
+                    </svg>
+                    <div class="topic-content">
+                        Trang Chủ 
+                        <a class="link-zip-trangchu" href="https://luuvohoang.github.io/SotaySucKhoe/index1.html"></a>
+                    </div>
+                    <div class="topic-content">
+                        Lịch
+                        <a class="link-zip-lich" href="https://luuvohoang.github.io/SotaySucKhoe/index-lich.html"></a>
+                    </div>
+                    <div class="topic-content">
+                        Tin Tức
+                        <a class="link-zip-tintuc" href="https://luuvohoang.github.io/SotaySucKhoe/index1.html"></a>
+                    </div>
+                    <div class="topic-content">
+                        Phân loại
+                        <a class="link-zip-phanloai" href="https://luuvohoang.github.io/SotaySucKhoe/index1.html"></a>
+                    </div>
+                    <div class="topic-content">
+                        Đã Lưu
+                        <a class="link-zip-daluu" href="https://luuvohoang.github.io/SotaySucKhoe/index1.html"></a>
+                    </div>
+                </div>
+                <div class="navbar-right">
+                    <div class="sign-in">Đăng Nhập</div>
+                    <div class="join-now">Đăng Ký</div>
+                </div>
+            </div>
+        </div>
+        <div class="pic">
+            <section>
+                <div class="khung-grid">
+                    <div class="tintuc-grid">
+                        <div > 
+                            <img class="image" src="pic/banh-chung-200.jpg">
+                        </div>
+                        <div class="font-write">
+                            <div class="content">
+                                10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết 
+                            </div>
+                            <div class="content">
+                                Tác Giả: Thiên Anh
+                            </div>
+                            <div class="content">
+                                Editer: Hoàng Thức
+                            </div>
+                            <button class="nut">LƯU</button>
+                        </div>
+                    </div>
+                    <div class="tintuc-grid">
+                        <div > 
+                            <img class="image" src="pic/banh-chung-200.jpg">
+                        </div>
+                        <div class="font-write">
+                            <div class="content">
+                                10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết 
+                            </div>
+                            <div class="content">
+                                Tác Giả: Thiên Anh
+                            </div>
+                            <div class="content">
+                                Editer: Hoàng Thức
+                            </div>
+                            <button class="nut">LƯU</button>
+                        </div>
+                    </div>
+                    <div class="tintuc-grid">
+                        <div > 
+                            <img class="image" src="pic/banh-chung-200.jpg">
+                        </div>
+                        <div class="font-write">
+                            <div class="content">
+                                10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết 
+                            </div>
+                            <div class="content">
+                                Tác Giả: Thiên Anh
+                            </div>
+                            <div class="content">
+                                Editer: Hoàng Thức
+                            </div>
+                            <button class="nut">LƯU</button>
+                        </div>
+                    </div>
+                    <div class="tintuc-grid">
+                        <div > 
+                            <img class="image" src="pic/banh-chung-200.jpg">
+                        </div>
+                        <div class="font-write">
+                            <div class="content">
+                                10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết 
+                            </div>
+                            <div class="content">
+                                Tác Giả: Thiên Anh
+                            </div>
+                            <div class="content">
+                                Editer: Hoàng Thức
+                            </div>
+                            <button class="nut">LƯU</button>
+                        </div>
+                    </div>
+
+                </div>   
+            </section>
+        </div>
+    </body>
+</html>
+        

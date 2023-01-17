@@ -1,0 +1,370 @@
+body
+{
+    font-family: Roboto,Arial;
+}
+.pic
+{
+    position: relative;
+    /* width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(pic/624111.webp);
+    background-position: center;
+    background-size: contain; */
+}
+.font-write
+{
+    color: rgb(0, 0, 0);
+    vertical-align: top;
+}
+.tintuc-grid
+{
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+.khung-grid
+{
+    border-radius: 4px;
+    position: absolute;
+    height: 600px;
+    width: 1430px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    border: none;
+}
+.ima
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+p
+{
+    color: rgb(0, 0, 0);
+}
+.plus-display
+{
+    display: none;
+    margin-top: 40px;
+    margin-left: 438px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 550px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(195, 193, 193);
+
+}
+.task-bar-plus
+{
+    position: relative;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 60px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color: lightgray;    background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+    background-size: 400% 400%;
+    
+}
+.search-bar-section
+{
+    margin-left: 8px;
+    margin-top: -4px;
+    display: flex;
+    justify-content: left;
+}
+.task-bar-plus .search-bar-plus
+{
+    margin-top: 2px;
+    margin-left: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border: 1px solid lightgray;
+    height: 40px;
+    width: 400px;
+    font-size: 15px;
+    padding-left: 15px;
+}
+.task-bar-plus .search-button-plus
+{
+    margin-top: 2px;
+    margin-left: -2px;
+    border: 1px solid lightgray;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    height: 40px;
+    width: 80px;
+}
+.close-button-plus
+{
+    background-color: rgb(221, 220, 220);
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    border: none;
+    font-size: 25px;
+    border-radius: 10px;
+}
+.close-button-plus:hover
+{
+    background-color: gray;
+}
+.close-button-plus:active
+{
+    background-color: rgb(55, 54, 54);
+}
+.mention-plus
+{
+    margin-top: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 540px;
+    height: 60px;
+}
+.display-plus
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    border-radius: 4px;
+    height: 525px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: none;
+    margin-top: 5px;
+}
+::-webkit-scrollbar
+{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: rgb(192, 189, 189);
+    border-radius: 5px;
+}
+.element-plus
+{
+    color: #000;
+    font-family: EB Garamon;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    background-color: rgb(224, 233, 233);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* position: absolute; */
+    font-size: 25px;
+    border-radius: 4px;
+    width: 540px;
+    border: 1px solid gray;
+    border: none;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.15);
+    /* color: #000;
+    font-family: EB Garamon;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    background-color: rgb(224, 233, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    font-size: 25px;
+    border-radius: 4px;
+    width: 540px;
+    height: 100px;
+    border: 1px solid gray;
+    border: none;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.15); */ 
+}
+.checkbox-plus
+{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: green;
+    color: green;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+.gram-plus
+{
+    margin-right: 30px;
+    padding-left: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 3px solid rgb(196, 194, 194);
+}
+.name-food
+{
+    width: 200px;
+}
+.calo-gram
+{
+    display: flex;
+    justify-content: right;
+    width: 400px;
+}
+.choose-plus
+{
+    position: relative;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* border-top: 1px solid rgb(138, 134, 134); */
+    width: 550px;
+    height:50px;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+    background-size: 400% 400%;
+    /* animation: change 20s ease-in-out infinite; */
+    opacity: 0.6;
+}
+.choose-plus:hover
+{
+    opacity: 1;
+}
+.cell
+{
+    border-radius: 4px;
+    width: 40px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    margin-left: 4px;
+    margin-right: 4px;
+    border: none;
+    
+}
+.cell-number
+{
+    color: black;
+    font-family: EB Garamon;
+    height: 40px;
+    background-color: rgb(238, 237, 237);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-bottom: 1px solid gray;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.15);
+    border: none;
+}
+.cell-mention
+{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    justify-content: top;
+    border-radius: 4px;
+    height: 525px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: none;
+    margin-top: 5px;
+}
+::-webkit-scrollbar
+{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: rgb(192, 189, 189);
+    border-radius: 5px;
+}
+.cell-element
+{
+    color: #000;
+    font-family: EB Garamon;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    background-color: rgb(224, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: absolute; */
+    font-size: 25px;
+    border-radius: 4px;
+    width: 180px;
+    border: 1px solid gray;
+    border: none;
+    /* box-shadow: inset 1px 2px 3px rgba(64, 64, 64, 0.15); */
+}
+.cell-add
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: rgb(243, 236, 237);
+    font-size: 30px;
+    border: none;
+}  
+.plus-button
+{
+    background-color: rgb(240, 238, 238);
+    width: 198px;
+    border-top: 1px solid black;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    opacity: 0.7;
+    border: none;
+    margin-top: 1px;
+    width: 197px;
+} 
+.plus-button:hover
+{
+    opacity: 2;
+    background-color: red;
+}
+.plus-button:active
+{
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.15);
+    
+}
+.plus-img
+{
+    height: 30px;
+    border: none;
+}
+.search-img
+{
+    pointer-events: none;
+    height: 15px;
+    border: none;
+}
