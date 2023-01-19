@@ -71,7 +71,8 @@ p
     display: flex;
     justify-content: space-between;
     align-items:center;
-    background-color: lightgray;    background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
+    background-color: lightgray;    
+    background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
     background-size: 400% 400%;
     
 }
@@ -264,6 +265,21 @@ p
     border: none;
     
 }
+.calo-amount-box
+{
+    background-color: rgb(219, 214, 214);
+    height: 40px;
+    width: 196px;
+    font-size: 20px;
+    border-top: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    /* border-bottom: 1px solid gray; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .cell-number
 {
     color: black;
@@ -290,6 +306,8 @@ p
     background-color: rgb(255, 255, 255);
     justify-content: top;
     border-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     height: 525px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -312,17 +330,25 @@ p
     margin-top: 2px;
     margin-bottom: 2px;
     margin-left: 5px;
-    background-color: rgb(224, 233, 233);
+    background-color: rgb(49, 62, 62);
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* position: absolute; */
     font-size: 25px;
-    border-radius: 4px;
+    border-radius: 5px;
     width: 180px;
     border: 1px solid gray;
     border: none;
     /* box-shadow: inset 1px 2px 3px rgba(64, 64, 64, 0.15); */
+}
+.delete-button
+{
+    margin-left: 12px;
+    width:30px;
+    height: 30px;
+    border-radius: 5px; 
+    border: none;   
 }
 .cell-add
 {
@@ -339,12 +365,12 @@ p
 {
     background-color: rgb(240, 238, 238);
     width: 198px;
-    border-top: 1px solid black;
+    /* border-top: 1px solid rgb(6, 6, 6); */
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     opacity: 0.7;
     border: none;
-    margin-top: 1px;
+    margin-top: -2px;
     width: 197px;
 } 
 .plus-button:hover
