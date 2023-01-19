@@ -4,142 +4,19 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link type="text/css" rel="stylesheet" href="style.css" />
+        <link type="text/css" rel="stylesheet" href="style1.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
         <title>SoTaySucKhoe_Demo</title>
-        <style>
-            body
-            {
-                font-family: Roboto,Arial;
-                color: black;
-            }
-            p{
-                font-family: Roboto,Arial, Helvetica, sans-serif;
-                font-size: 25px;
-                line-height: 20px;
-            }
-
-            .pic
-            {
-                position: relative;
-            }
-            .khung-grid
-            {
-                position: absolute;
-                margin-top: 10px;
-                row-gap: 10px;
-                margin-left: 300px;
-                display: grid;
-                grid-template-rows: 1fr 1fr;
-            }
-            .image
-            {
-                width: 200px;
-                height: 200px;
-                border-top-left-radius: 10px;
-                border-bottom-left-radius: 10px;
-            }
-            .tintuc-grid
-            {
-                height: 200px;
-                background-color: white;
-                border-radius: 10px;
-                /* column-gap: 10px; */
-                display: grid;
-                grid-template-columns: 200px 1fr;
-            }
-            .font-write
-            {   
-                margin-top: 0px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: left;
-                color: #000;   
-                vertical-align: top;
-                row-gap: 10px;
-                background-color: lightblue;
-                height: 200px;
-                border-top-right-radius: 10px;
-                border-bottom-right-radius: 10px;
-            }
-            .content
-            {
-                font-size: 20px;
-                display: flex;
-                flex-direction: column;
-                justify-content: top;
-                align-items: top;
-                width: 710px;
-            }
-            .nut
-            {
-                border: #065fd4;
-                padding: 10px 20px;
-                border-radius: 2px;
-                font-weight: 500;
-                font-size: 15px;
-                color: black;
-                border-bottom-right-radius: 10px;
-            }
-            .topic-content .link-zip-trangchu
-            {
-                position: absolute;
-                height: 20px;
-                width: 80px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: -20px;
-            }
-            .topic-content .link-zip-lich
-            {
-                position: absolute;
-                height: 20px;
-                width: 30px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: -20px;
-            }
-            .topic-content .link-zip-tintuc
-            {
-                position: absolute;
-                height: 20px;
-                width: 50px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: -20px;
-            }
-            .topic-content .link-zip-phanloai
-            {
-                position: absolute;
-                height: 20px;
-                width: 70px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: -20px;
-            }
-            .topic-content .link-zip-daluu
-            {
-                position: absolute;
-                height: 20px;
-                width: 50px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: -20px; 
-            }
-            .topic-content
-            {
-                position: relative;
-            }
-
-        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="navbar-container">
@@ -156,26 +33,11 @@
                         <circle cx="31" cy="31" fill="#fff" r="30.002"></circle>
                         <img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://scontent.fdad4-1.fna.fbcdn.net/v/t1.15752-9/324407389_707274027477627_8731123341976114818_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=ae9488&amp;_nc_ohc=rjtu6LlPvW8AX8Xja3l&amp;tn=UzWXfHFlac9hyeeL&amp;_nc_ht=scontent.fdad4-1.fna&amp;oh=03_AdTS9ynEjsU0omjClprFqZYdpIfRUvqxnNc1xKWxBfJCkQ&amp;oe=63E8A9A2" width="91" height="73">
                     </svg>
-                    <div class="topic-content">
-                        Trang Chủ 
-                        <a class="link-zip-trangchu" href="https://luuvohoang.github.io/SotaySucKhoe/index1.html"></a>
-                    </div>
-                    <div class="topic-content">
-                        Lịch
-                        <a class="link-zip-lich" href="https://luuvohoang.github.io/SotaySucKhoe/index-lich.html"></a>
-                    </div>
-                    <div class="topic-content">
-                        Tin Tức
-                        <a class="link-zip-tintuc" href="https://luuvohoang.github.io/SotaySucKhoe/index1.html"></a>
-                    </div>
-                    <div class="topic-content">
-                        Phân loại
-                        <a class="link-zip-phanloai" href="https://luuvohoang.github.io/SotaySucKhoe/index1.html"></a>
-                    </div>
-                    <div class="topic-content">
-                        Đã Lưu
-                        <a class="link-zip-daluu" href="https://luuvohoang.github.io/SotaySucKhoe/index1.html"></a>
-                    </div>
+                    <div>Trang Chủ</div>
+                    <div>Lịch</div>
+                    <div>Tin Tức</div>
+                    <div>Phân loại</div>
+                    <div>Đã Lưu</div>
                 </div>
                 <div class="navbar-right">
                     <div class="sign-in">Đăng Nhập</div>
@@ -184,80 +46,2432 @@
             </div>
         </div>
         <div class="pic">
-            <section>
+            <section class="pic">
                 <div class="khung-grid">
-                    <div class="tintuc-grid">
-                        <div > 
-                            <img class="image" src="pic/banh-chung-200.jpg">
+                                    <!-- Thứ 2 -->
+<!-- **************************************************************************** -->
+                    <div class="cell">
+                        <div class="cell-number" style="background-color: #f8d2df;">
+                            Thứ 2
                         </div>
-                        <div class="font-write">
-                            <div class="content">
-                                10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết 
+                        <input id="result-id-thu2" type="text" class="calo-amount-box" style="background-color: #f8d2df;">
+                        <div id="food-list-thu2" class="cell-mention">
+                        </div>
+                        <div class="cell-add">
+                            <button id="plus-button-thu2-id" class="plus-button" style="background-color: #f8d2df" id="plus-button" type="button">
+                                <img  class="plus-img" src="pic/plus-1.png" alt="">
+                            </button>     
+                            <script>
+                                $(document).ready(function()
+                                {
+                                    $("#plus-button-thu2-id").click(function()
+                                    {      
+                                        let plusdisplayclass = document.getElementsByClassName("plus-display");
+                                        //alert(plusdisplayclass[0].id);
+                                        for(let i =0 ;i < plusdisplayclass.length;i++)
+                                        {
+                                            if(plusdisplayclass[i].id != 'plus-display-thu2-id')plusdisplayclass[i].style.display = 'none';
+                                        }      
+                                        $("#plus-display-thu2-id").fadeToggle(600);
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>    
+                    <div id="plus-display-thu2-id" class="plus-display" style="display: none;">
+                        <div class="task-bar-plus">
+                            <div class="search-bar-section">
+                                <input class="search-bar-plus" type="text" placeholder="Tìm kiếm - Thứ 2">
+                                <button class="search-button-plus">
+                                    <img class="search-img" src="pic/search.png" alt="">
+                                </button>
                             </div>
-                            <div class="content">
-                                Tác Giả: Thiên Anh
+                            <div>
+                                <button id="close-button-plus-thu2-id" class="close-button-plus">
+                                    <img class="search-img" src="pic/cross-button.png" alt="">
+                                </button>
+                                <script>
+                                    $(document).ready(function()
+                                    {
+                                        $("#close-button-plus-thu2-id").click(function()
+                                        {            
+                                            $("#plus-display-thu2-id").fadeOut(600);
+                                        });
+                                    });
+                                </script>
                             </div>
-                            <div class="content">
-                                Editer: Hoàng Thức
-                            </div>
-                            <button class="nut">LƯU</button>
+                        </div>
+                        <div class="display-plus">
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title" class="checkbox-plus" type="checkbox" name="Thịt bò" value="171">
+                                </div>
+                                <div class="name-food">
+                                    Thịt bò
+                                </div>
+                                <div>
+                                    <input id="input-id-thu2" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>171calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title" class="checkbox-plus" type="checkbox" name="Thịt gà" value="181">
+                                </div>
+                                <div class="name-food">
+                                    Thịt gà
+                                </div>
+                                <div>
+                                    <input id="input-id-thu2" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>181calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title" class="checkbox-plus" type="checkbox" name="Cá" value="191">
+                                </div>
+                                <div class="name-food">
+                                    Cá
+                                </div>
+                                <div>
+                                    <input id="input-id-thu2" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>191calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title" class="checkbox-plus" type="checkbox" name="Rau" value="91">
+                                </div>
+                                <div class="name-food">
+                                    Rau
+                                </div>
+                                <div>
+                                    <input id="input-id-thu2" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>91calo/100gram</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div onclick="addTodothu2();" class="choose-plus">
+                            <img class="plus-img" src="pic/plus-1.png" alt="">
                         </div>
                     </div>
-                    <div class="tintuc-grid">
-                        <div > 
-                            <img class="image" src="pic/banh-chung-200.jpg">
-                        </div>
-                        <div class="font-write">
-                            <div class="content">
-                                10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết 
-                            </div>
-                            <div class="content">
-                                Tác Giả: Thiên Anh
-                            </div>
-                            <div class="content">
-                                Editer: Hoàng Thức
-                            </div>
-                            <button class="nut">LƯU</button>
-                        </div>
-                    </div>
-                    <div class="tintuc-grid">
-                        <div > 
-                            <img class="image" src="pic/banh-chung-200.jpg">
-                        </div>
-                        <div class="font-write">
-                            <div class="content">
-                                10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết 
-                            </div>
-                            <div class="content">
-                                Tác Giả: Thiên Anh
-                            </div>
-                            <div class="content">
-                                Editer: Hoàng Thức
-                            </div>
-                            <button class="nut">LƯU</button>
-                        </div>
-                    </div>
-                    <div class="tintuc-grid">
-                        <div > 
-                            <img class="image" src="pic/banh-chung-200.jpg">
-                        </div>
-                        <div class="font-write">
-                            <div class="content">
-                                10 mẹo hay để luộc bánh chưng xanh tự nhiên đón Tết 
-                            </div>
-                            <div class="content">
-                                Tác Giả: Thiên Anh
-                            </div>
-                            <div class="content">
-                                Editer: Hoàng Thức
-                            </div>
-                            <button class="nut">LƯU</button>
-                        </div>
-                    </div>
+                    <script>
 
-                </div>   
+                        // Model section 
+                        // If localstorage has a todos array, then use it
+                        // Otherwise use the default array.
+                        let resultthu2;
+                        let todosthu2;
+                        //localStorage.clear();
+                        const savedresultthu2 = JSON.parse(localStorage.getItem('caloAmountthu2'));
+                        if(savedresultthu2!=null)
+                        {
+                            resultthu2= savedresultthu2;
+                            //alert(savedresult);
+                        }
+                        else
+                        {
+                            resultthu2= 0;
+                        }
+                        //alert('hello');
+                        document.getElementById('result-id-thu2').value ='Tổng: ' + resultthu2.toFixed(2) + ' calo';
+                        resultthu2=0;
+                        //alert(result);
+                        //alert('hello');
+                        const savedTodosthu2 = JSON.parse(localStorage.getItem('todosthu2'));
+                        if(Array.isArray(savedTodosthu2))
+                        {
+                            todosthu2=savedTodosthu2;
+                        }
+                        else
+                        {
+                            todosthu2 = 
+                                [
+                                    // {
+                                    //     foodName: 'Thịt bò',
+                                    //     id: 'id1'
+                                    // },
+                                    // {
+                                    //     foodName: 'Thịt heo',
+                                    //     foodValue: 200,
+                                    //     value: 200,
+                                    //     id: 'id2'
+                                    // }
+                                    // {
+                                    //     foodName: 'Thịt gà',
+                                    //     id: 'id3'
+                                    // }
+                                ];
+                        }
+                        renderthu2();
+                
+                        function saveTodosthu2()
+                        {
+                            localStorage.setItem('todosthu2',JSON.stringify(todosthu2));
+                        }
+                        function saveCaloAmountthu2()
+                        {
+                            localStorage.setItem('caloAmountthu2',JSON.stringify(resultthu2));
+                        }
+                        // // Controller section
+                        function addTodothu2()
+                        {
+                            //alert('hello');
+                            for(let i=0; i<1;i++)
+                            {
+                                //alert('hell01');
+                                let checkboxthu2 = document.querySelectorAll("[id='input-id-thu2']");
+                                const textbox = document.querySelectorAll("[id='text-title']");
+                                for(let i =0;i< textbox.length;i++)
+                                {
+                                    //alert('hell01');
+                                    let flag = true;
+                                    const foodName = textbox[i].name; 
+                                    //alert(checkboxthu2[i].value);
+                                    const foodValue = textbox[i].value;
+                                
+                                    //if(valuethu2==="") valuethu2='0';
+                                    //parseInt(value) += parseInt(0);
+                                    //alert(value);
+                                    const ticked = textbox[i].checked;
+                                    // ticked and we will add it into display
+                                    if(ticked)
+                                    {
+                                        let valuethu2 = checkboxthu2[i].value;
+                                        //alert('hell01');
+                                        for(let j =0;j< todosthu2.length;j++)
+                                        {
+                                            //alert(todosthu2.length);
+                                            //alert(todosthu2[i].foodName);
+                                            //alert(foodName);
+                                            if(todosthu2[j].foodName === foodName)
+                                            {
+                                                flag=false;
+                                                //alert('bạn đã chọn thực phẩm này rồi :v');
+                                                break;
+                                            }
+                                        }
+                                        if(flag === true)
+                                        {
+                                            //alert('render');
+                                            createTodothu2(foodName,foodValue,valuethu2,i);
+                
+                                            renderthu2();
+                                        }
+                
+                                    }
+                                }
+                            }
+                            for(let i = 0;i < todosthu2.length;i++)
+                            {
+                                resultthu2+=parseFloat(todosthu2[i].valuethu2)/parseFloat(100) *parseFloat(todosthu2[i].foodValue);
+                            }
+                            document.getElementById('result-id-thu2').value ='Tổng: ' + resultthu2.toFixed(2) + " calo";
+                            saveCaloAmountthu2();
+                            //alert(result);
+                            resultthu2=0;
+                        }
+                        // Create a todo
+                        function createTodothu2(foodName,foodValue,valuethu2,i)
+                        {
+                            //alert('hello00')
+                            let id = ' ' + (new Date().getTime()+i);
+                            todosthu2.push
+                            (
+                                {
+                                    foodName: foodName,
+                                    foodValue: foodValue,
+                                    valuethu2: valuethu2,
+                                    id: id
+                                }
+                            );
+                            saveTodosthu2();
+                        }
+                
+                        function deleteTodothu2(event)
+                        {
+                            const deleteButton = event.target;
+                            const idToDelete = deleteButton.id;
+                
+                            deleteTodoitemthu2(idToDelete);
+                            renderthu2();  
+                            for(let i = 0;i < todosthu2.length;i++)
+                            {
+                                resultthu2+=parseFloat(todosthu2[i].valuethu2)/parseFloat(100) *parseFloat(todosthu2[i].foodValue);
+                            }
+                            document.getElementById('result-id-thu2').value ='Tổng: '+ resultthu2.toFixed(2) + " calo";
+                            saveCaloAmountthu2();
+                            resultthu2=0;
+                        }
+                        // // Delete a todo 
+                        function deleteTodoitemthu2(idToDelete)
+                        {
+                            todosthu2 = todosthu2.filter
+                            (
+                                function (todothu2)
+                                {    
+                                    // if the id of this todo match idToDelete,return false
+                                    // for everything else, return true
+                                    if(todothu2.id === idToDelete)
+                                    {
+                                        return false;
+                                    }
+                                    else
+                                    {
+                                        return true;
+                                    }
+                                }
+                            )
+                            saveTodosthu2();
+                        }
+                        // View section
+                        function renderthu2()
+                        {
+                            //alert('hellorender');
+                            // refresh the todo-list (id)
+                            document.getElementById('food-list-thu2').innerHTML = '';
+                            //alert(todosthu2.length);
+                            todosthu2.forEach
+                            (
+                                function (todothu2)
+                               {
+                                    let element = document.createElement('div'); 
+                                    element.innerText = '\u00a0' + todothu2.foodName;
+                                    element.className = "cell-element";
+                                    element.style = "background-color: #f8d2df;"
+                
+                                    let deleteButton = document.createElement('button');
+                                    deleteButton.innerText = 'X';
+                                    deleteButton.className = "delete-button";
+                                    deleteButton.innerHTML = " <img width= 20px style='pointer-events: none;' src = 'pic/cross-button.png'>";
+                                    deleteButton.onclick = deleteTodothu2;
+                                    deleteButton.id = todothu2.id;
+                                    element.appendChild(deleteButton);
+                
+                                    let todoList = document.getElementById('food-list-thu2');
+                                    todoList.appendChild(element);
+                                    //alert('thu2');
+                               }
+                            )
+                        }
+                        //localStorage.clear;
+                        //alert(result);
+                    </script>
+                                    <!-- Thứ 3 -->
+<!-- **************************************************************************** -->
+                    <div class="cell">
+                        <div class="cell-number" style="background-color: #b5d4fe;">
+                            Thứ 3
+                        </div>
+                        <input id="result-id-thu3" type="text" class="calo-amount-box" style="background-color: #b5d4fe;">
+                        <div id="food-list-thu3" class="cell-mention">
+                        </div>
+                        <div class="cell-add">
+                            <button id="plus-button-thu3-id" class="plus-button" style="background-color: #b5d4fe" id="plus-button" type="button">
+                                <img  class="plus-img" src="pic/plus-1.png" alt="">
+                            </button>     
+                            <script>
+                                $(document).ready(function()
+                                {
+                                    $("#plus-button-thu3-id").click(function()
+                                    {            
+                                        let plusdisplayclass = document.getElementsByClassName("plus-display");
+                                        //alert(plusdisplayclass.length);
+                                        for(let i =0 ;i < plusdisplayclass.length;i++)
+                                        {
+                                            if(plusdisplayclass[i].id != 'plus-display-thu3-id')plusdisplayclass[i].style.display = 'none';
+                                        }
+                                        $("#plus-display-thu3-id").fadeToggle(600);
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>    
+                    <div id="plus-display-thu3-id" class="plus-display" style="display: none;">
+                        <div class="task-bar-plus">
+                            <div class="search-bar-section">
+                                <input class="search-bar-plus" type="text" placeholder="Tìm kiếm - Thứ 3">
+                                <button class="search-button-plus">
+                                    <img class="search-img" src="pic/search.png" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <button id="close-button-plus-thu3-id" class="close-button-plus">
+                                    <img class="search-img" src="pic/cross-button.png" alt="">
+                                </button>
+                                <script>
+                                    $(document).ready(function()
+                                    {
+                                        $("#close-button-plus-thu3-id").click(function()
+                                        {            
+                                            $("#plus-display-thu3-id").fadeOut(600);
+                                        });
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        <div class="display-plus">
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu3" class="checkbox-plus" type="checkbox" name="Thịt bò" value="171">
+                                </div>
+                                <div class="name-food">
+                                    Thịt bò
+                                </div>
+                                <div>
+                                    <input id="input-id-thu3" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>171calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu3" class="checkbox-plus" type="checkbox" name="Thịt gà" value="181">
+                                </div>
+                                <div class="name-food">
+                                    Thịt gà
+                                </div>
+                                <div>
+                                    <input id="input-id-thu3" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>181calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu3" class="checkbox-plus" type="checkbox" name="Cá" value="191">
+                                </div>
+                                <div class="name-food">
+                                    Cá
+                                </div>
+                                <div>
+                                    <input id="input-id-thu3" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>191calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu3" class="checkbox-plus" type="checkbox" name="Rau" value="91">
+                                </div>
+                                <div class="name-food">
+                                    Rau
+                                </div>
+                                <div>
+                                    <input id="input-id-thu3" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>91calo/100gram</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div onclick="addTodothu3();" class="choose-plus">
+                            <img class="plus-img" src="pic/plus-1.png" alt="">
+                        </div>
+                    </div>
+                    <script>
+
+                        // Model section 
+                        // If localstorage has a todos array, then use it
+                        // Otherwise use the default array.
+                        let resultthu3;
+                        let todosthu3;
+                        //localStorage.clear();
+                        const savedresultthu3 = JSON.parse(localStorage.getItem('caloAmountthu3'));
+                        if(savedresultthu3!=null)
+                        {
+                            resultthu3= savedresultthu3;
+                            //alert(savedresult);
+                        }
+                        else
+                        {
+                            resultthu3= 0;
+                        }
+                        //alert('hello');
+                        document.getElementById('result-id-thu3').value ="Tổng: " + resultthu3.toFixed(2) + ' calo';
+                        resultthu3=0;
+                        //alert(result);
+                        //alert('hello');
+                        const savedTodosthu3 = JSON.parse(localStorage.getItem('todosthu3'));
+                        if(Array.isArray(savedTodosthu3))
+                        {
+                            todosthu3=savedTodosthu3;
+                        }
+                        else
+                        {
+                            todosthu3 = 
+                                [
+                                    // {
+                                    //     foodName: 'Thịt bò',
+                                    //     id: 'id1'
+                                    // },
+                                    // {
+                                    //     foodName: 'Thịt heo',
+                                    //     foodValue: 200,
+                                    //     value: 200,
+                                    //     id: 'id2'
+                                    // }
+                                    // {
+                                    //     foodName: 'Thịt gà',
+                                    //     id: 'id3'
+                                    // }
+                                ];
+                        }
+                        renderthu3();
+                
+                        function saveTodosthu3()
+                        {
+                            localStorage.setItem('todosthu3',JSON.stringify(todosthu3));
+                        }
+                        function saveCaloAmountthu3()
+                        {
+                            localStorage.setItem('caloAmountthu3',JSON.stringify(resultthu3));
+                        }
+                        // // Controller section
+                        function addTodothu3()
+                        {
+                            //alert('hello');
+                            for(let i=0; i<1;i++)
+                            {
+                                //alert('hell01');
+                                let checkboxthu3 = document.querySelectorAll("[id='input-id-thu3']");
+                                const textbox = document.querySelectorAll("[id='text-title-thu3']");
+                                // for(let i=0;i<checkboxthu3.length;i++)
+                                // {
+                                //     alert('hello');
+                                //     alert(checkboxthu3[i].value);
+                                // }
+                                //alert(checkboxthu3.length);
+                                for(let i =0;i< checkboxthu3.length;i++)
+                                {
+                                    //alert('hell01');
+                                    let flag = true;
+                                    const foodName = textbox[i].name; 
+                                    //alert(checkboxthu3[i].value);
+                                    const foodValue = textbox[i].value;
+                                
+                                    //if(valuethu3==="") valuethu3='0';
+                                    //parseInt(value) += parseInt(0);
+                                    //alert(value);
+                                    const ticked = textbox[i].checked;
+                                    // ticked and we will add it into display
+                                    if(ticked)
+                                    {
+                                        //alert('hello111');
+                                        let valuethu3 = checkboxthu3[i].value;
+                                        //alert('hell01');
+                                        for(let j =0;j< todosthu3.length;j++)
+                                        {
+                                            //alert(todosthu3.length);
+                                            //alert(todosthu3[i].foodName);
+                                            //alert(foodName);
+                                            if(todosthu3[j].foodName === foodName)
+                                            {
+                                                flag=false;
+                                                //alert('bạn đã chọn thực phẩm này rồi :v');
+                                                break;
+                                            }
+                                        }
+                                        if(flag === true)
+                                        {
+                                            //alert('render');
+                                            createTodothu3(foodName,foodValue,valuethu3,i);
+                
+                                            renderthu3();
+                                        }
+                
+                                    }
+                                }
+                            }
+                            for(let i = 0;i < todosthu3.length;i++)
+                            {
+                                resultthu3+=parseFloat(todosthu3[i].valuethu3)/parseFloat(100) *parseFloat(todosthu3[i].foodValue);
+                            }
+                            document.getElementById('result-id-thu3').value ="Tổng: "+ resultthu3.toFixed(2) + " calo";
+                            saveCaloAmountthu3();
+                            //alert(result);
+                            resultthu3=0;
+                        }
+                        // Create a todo
+                        function createTodothu3(foodName,foodValue,valuethu3,i)
+                        {
+                            //alert('hello00')
+                            let id = ' ' + (new Date().getTime()+i);
+                            todosthu3.push
+                            (
+                                {
+                                    foodName: foodName,
+                                    foodValue: foodValue,
+                                    valuethu3: valuethu3,
+                                    id: id
+                                }
+                            );
+                            saveTodosthu3();
+                        }
+                
+                        function deleteTodothu3(event)
+                        {
+                            const deleteButton = event.target;
+                            const idToDelete = deleteButton.id;
+                
+                            deleteTodoitemthu3(idToDelete);
+                            renderthu3();  
+                            for(let i = 0;i < todosthu3.length;i++)
+                            {
+                                resultthu3+=parseFloat(todosthu3[i].valuethu3)/parseFloat(100) *parseFloat(todosthu3[i].foodValue);
+                            }
+                            document.getElementById('result-id-thu3').value ="Tổng: " + resultthu3.toFixed(2) + " calo";
+                            saveCaloAmountthu3();
+                            resultthu3=0;
+                        }
+                        // // Delete a todo 
+                        function deleteTodoitemthu3(idToDelete)
+                        {
+                            todosthu3 = todosthu3.filter
+                            (
+                                function (todothu3)
+                                {    
+                                    // if the id of this todo match idToDelete,return false
+                                    // for everything else, return true
+                                    if(todothu3.id === idToDelete)
+                                    {
+                                        return false;
+                                    }
+                                    else
+                                    {
+                                        return true;
+                                    }
+                                }
+                            )
+                            saveTodosthu3();
+                        }
+                        // View section
+                        function renderthu3()
+                        {
+                            //alert('hellorender');
+                            // refresh the todo-list (id)
+                            document.getElementById('food-list-thu3').innerHTML = '';
+                            //alert(todosthu3.length);
+                            todosthu3.forEach
+                            (
+                                function (todothu3)
+                               {
+                                    let element = document.createElement('div'); 
+                                    element.innerText = '\u00a0' + todothu3.foodName;
+                                    element.className = "cell-element";
+                                    element.style = "background-color: #b5d4fe;"
+                
+                                    let deleteButton = document.createElement('button');
+                                    deleteButton.innerText = 'X';
+                                    deleteButton.className = "delete-button";
+                                    deleteButton.innerHTML = " <img width= 20px style='pointer-events: none;' src = 'pic/cross-button.png'>";
+                                    deleteButton.onclick = deleteTodothu3;
+                                    deleteButton.id = todothu3.id;
+                                    element.appendChild(deleteButton);
+                
+                                    let todoList = document.getElementById('food-list-thu3');
+                                    todoList.appendChild(element);
+                                    //alert('thu2');
+                               }
+                            )
+                        }
+                        //localStorage.clear;
+                        //alert(result);
+                    </script>
+                                    <!-- Thứ 4 -->
+<!-- **************************************************************************** -->
+                    <div class="cell">
+                        <div class="cell-number" style="background-color: #e0ecd5;">
+                            Thứ 4
+                        </div>
+                        <input id="result-id-thu4" type="text" class="calo-amount-box" style="background-color: #e0ecd5;">
+                        <div id="food-list-thu4" class="cell-mention">
+                        </div>
+                        <div class="cell-add">
+                            <button id="plus-button-thu4-id" class="plus-button" style="background-color: #e0ecd5" id="plus-button" type="button">
+                                <img  class="plus-img" src="pic/plus-1.png" alt="">
+                            </button>     
+                            <script>
+                                $(document).ready(function()
+                                {
+                                    $("#plus-button-thu4-id").click(function()
+                                    {      
+                                        let plusdisplayclass = document.getElementsByClassName("plus-display");
+                                        //alert(plusdisplayclass[0].id);
+                                        for(let i =0 ;i < plusdisplayclass.length;i++)
+                                        {
+                                            if(plusdisplayclass[i].id != 'plus-display-thu4-id')plusdisplayclass[i].style.display = 'none';
+                                        }      
+                                        $("#plus-display-thu4-id").fadeToggle(600);
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>    
+                    <div id="plus-display-thu4-id" class="plus-display" style="display: none;">
+                        <div class="task-bar-plus">
+                            <div class="search-bar-section">
+                                <input class="search-bar-plus" type="text" placeholder="Tìm kiếm - Thứ 4">
+                                <button class="search-button-plus">
+                                    <img class="search-img" src="pic/search.png" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <button id="close-button-plus-thu4-id" class="close-button-plus">
+                                    <img class="search-img" src="pic/cross-button.png" alt="">
+                                </button>
+                                <script>
+                                    $(document).ready(function()
+                                    {
+                                        $("#close-button-plus-thu4-id").click(function()
+                                        {            
+                                            $("#plus-display-thu4-id").fadeOut(600);
+                                        });
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        <div class="display-plus">
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu4" class="checkbox-plus" type="checkbox" name="Thịt bò" value="171">
+                                </div>
+                                <div class="name-food">
+                                    Thịt bò
+                                </div>
+                                <div>
+                                    <input id="input-id-thu4" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>171calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu4" class="checkbox-plus" type="checkbox" name="Thịt gà" value="181">
+                                </div>
+                                <div class="name-food">
+                                    Thịt gà
+                                </div>
+                                <div>
+                                    <input id="input-id-thu4" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>181calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu4" class="checkbox-plus" type="checkbox" name="Cá" value="191">
+                                </div>
+                                <div class="name-food">
+                                    Cá
+                                </div>
+                                <div>
+                                    <input id="input-id-thu4" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>191calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu4" class="checkbox-plus" type="checkbox" name="Rau" value="91">
+                                </div>
+                                <div class="name-food">
+                                    Rau
+                                </div>
+                                <div>
+                                    <input id="input-id-thu4" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>91calo/100gram</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div onclick="addTodothu4();" class="choose-plus">
+                            <img class="plus-img" src="pic/plus-1.png" alt="">
+                        </div>
+                    </div>
+                    <script>
+
+                        // Model section 
+                        // If localstorage has a todos array, then use it
+                        // Otherwise use the default array.
+                        let resultthu4;
+                        let todosthu4;
+                        //localStorage.clear();
+                        const savedresultthu4 = JSON.parse(localStorage.getItem('caloAmountthu4'));
+                        if(savedresultthu4!=null)
+                        {
+                            resultthu4= savedresultthu4;
+                            //alert(savedresult);
+                        }
+                        else
+                        {
+                            resultthu4= 0;
+                        }
+                        //alert('hello');
+                        document.getElementById('result-id-thu4').value ="Tổng: " + resultthu4.toFixed(2) + ' calo';
+                        resultthu4=0;
+                        //alert(result);
+                        //alert('hello');
+                        const savedTodosthu4 = JSON.parse(localStorage.getItem('todosthu4'));
+                        if(Array.isArray(savedTodosthu4))
+                        {
+                            todosthu4=savedTodosthu4;
+                        }
+                        else
+                        {
+                            todosthu4 = 
+                                [
+                                    // {
+                                    //     foodName: 'Thịt bò',
+                                    //     id: 'id1'
+                                    // },
+                                    // {
+                                    //     foodName: 'Thịt heo',
+                                    //     foodValue: 400,
+                                    //     value: 400,
+                                    //     id: 'id4'
+                                    // }
+                                    // {
+                                    //     foodName: 'Thịt gà',
+                                    //     id: 'id3'
+                                    // }
+                                ];
+                        }
+                        renderthu4();
+                
+                        function saveTodosthu4()
+                        {
+                            localStorage.setItem('todosthu4',JSON.stringify(todosthu4));
+                        }
+                        function saveCaloAmountthu4()
+                        {
+                            localStorage.setItem('caloAmountthu4',JSON.stringify(resultthu4));
+                        }
+                        // // Controller section
+                        function addTodothu4()
+                        {
+                            //alert('hello');
+                            for(let i=0; i<1;i++)
+                            {
+                                //alert('hell01');
+                                let checkboxthu4 = document.querySelectorAll("[id='input-id-thu4']");
+                                const textbox = document.querySelectorAll("[id='text-title-thu4']");
+                                for(let i =0;i< textbox.length;i++)
+                                {
+                                    //alert('hell01');
+                                    let flag = true;
+                                    const foodName = textbox[i].name; 
+                                    //alert(checkboxthu4[i].value);
+                                    const foodValue = textbox[i].value;
+                                
+                                    //if(valuethu4==="") valuethu4='0';
+                                    //parseInt(value) += parseInt(0);
+                                    //alert(value);
+                                    const ticked = textbox[i].checked;
+                                    // ticked and we will add it into display
+                                    if(ticked)
+                                    {
+                                        let valuethu4 = checkboxthu4[i].value;
+                                        //alert('hell01');
+                                        for(let j =0;j< todosthu4.length;j++)
+                                        {
+                                            //alert(todosthu4.length);
+                                            //alert(todosthu4[i].foodName);
+                                            //alert(foodName);
+                                            if(todosthu4[j].foodName === foodName)
+                                            {
+                                                flag=false;
+                                                //alert('bạn đã chọn thực phẩm này rồi :v');
+                                                break;
+                                            }
+                                        }
+                                        if(flag === true)
+                                        {
+                                            //alert('render');
+                                            createTodothu4(foodName,foodValue,valuethu4,i);
+                
+                                            renderthu4();
+                                        }
+                
+                                    }
+                                }
+                            }
+                            for(let i = 0;i < todosthu4.length;i++)
+                            {
+                                resultthu4+=parseFloat(todosthu4[i].valuethu4)/parseFloat(100) *parseFloat(todosthu4[i].foodValue);
+                            }
+                            document.getElementById('result-id-thu4').value ="Tổng: " + resultthu4.toFixed(2) + " calo";
+                            saveCaloAmountthu4();
+                            //alert(result);
+                            resultthu4=0;
+                        }
+                        // Create a todo
+                        function createTodothu4(foodName,foodValue,valuethu4,i)
+                        {
+                            //alert('hello00')
+                            let id = ' ' + (new Date().getTime()+i);
+                            todosthu4.push
+                            (
+                                {
+                                    foodName: foodName,
+                                    foodValue: foodValue,
+                                    valuethu4: valuethu4,
+                                    id: id
+                                }
+                            );
+                            saveTodosthu4();
+                        }
+                
+                        function deleteTodothu4(event)
+                        {
+                            const deleteButton = event.target;
+                            const idToDelete = deleteButton.id;
+                
+                            deleteTodoitemthu4(idToDelete);
+                            renderthu4();  
+                            for(let i = 0;i < todosthu4.length;i++)
+                            {
+                                resultthu4+=parseFloat(todosthu4[i].valuethu4)/parseFloat(100) *parseFloat(todosthu4[i].foodValue);
+                            }
+                            document.getElementById('result-id-thu4').value ="Tổng: " + resultthu4.toFixed(2) + " calo";
+                            saveCaloAmountthu4();
+                            resultthu4=0;
+                        }
+                        // // Delete a todo 
+                        function deleteTodoitemthu4(idToDelete)
+                        {
+                            todosthu4 = todosthu4.filter
+                            (
+                                function (todothu4)
+                                {    
+                                    // if the id of this todo match idToDelete,return false
+                                    // for everything else, return true
+                                    if(todothu4.id === idToDelete)
+                                    {
+                                        return false;
+                                    }
+                                    else
+                                    {
+                                        return true;
+                                    }
+                                }
+                            )
+                            saveTodosthu4();
+                        }
+                        // View section
+                        function renderthu4()
+                        {
+                            //alert('hellorender');
+                            // refresh the todo-list (id)
+                            document.getElementById('food-list-thu4').innerHTML = '';
+                            //alert(todosthu4.length);
+                            todosthu4.forEach
+                            (
+                                function (todothu4)
+                               {
+                                let element = document.createElement('div'); 
+                                    element.innerText = '\u00a0' + todothu4.foodName;
+                                    element.className = "cell-element";
+                                    element.style = "background-color: #e0ecd5;"
+                
+                                    let deleteButton = document.createElement('button');
+                                    deleteButton.innerText = 'X';
+                                    deleteButton.className = "delete-button";
+                                    deleteButton.innerHTML = " <img width= 20px style='pointer-events: none;' src = 'pic/cross-button.png'>";
+                                    deleteButton.onclick = deleteTodothu4;
+                                    deleteButton.id = todothu4.id;
+                                    element.appendChild(deleteButton);
+                
+                                    let todoList = document.getElementById('food-list-thu4');
+                                    todoList.appendChild(element);
+                                    //alert('thu2');
+                               }
+                            )
+                        }
+                        //localStorage.clear;
+                        //alert(result);
+                    </script>
+                                    <!-- Thứ 5 -->
+<!-- **************************************************************************** -->   
+                    <div class="cell">
+                        <div class="cell-number" style="background-color: #ccf1fc;">
+                            Thứ 5
+                        </div>
+                        <input id="result-id-thu5" type="text" class="calo-amount-box" style="background-color: #ccf1fc;">
+                        <div id="food-list-thu5" class="cell-mention">
+                        </div>
+                        <div class="cell-add">
+                            <button id="plus-button-thu5-id" class="plus-button" style="background-color: #ccf1fc" id="plus-button" type="button">
+                                <img  class="plus-img" src="pic/plus-1.png" alt="">
+                            </button>     
+                            <script>
+                                $(document).ready(function()
+                                {
+                                    $("#plus-button-thu5-id").click(function()
+                                    {      
+                                        let plusdisplayclass = document.getElementsByClassName("plus-display");
+                                        //alert(plusdisplayclass[0].id);
+                                        for(let i =0 ;i < plusdisplayclass.length;i++)
+                                        {
+                                            if(plusdisplayclass[i].id != 'plus-display-thu5-id')plusdisplayclass[i].style.display = 'none';
+                                        }      
+                                        $("#plus-display-thu5-id").fadeToggle(600);
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>    
+                    <div id="plus-display-thu5-id" class="plus-display" style="display: none;">
+                        <div class="task-bar-plus">
+                            <div class="search-bar-section">
+                                <input class="search-bar-plus" type="text" placeholder="Tìm kiếm - Thứ 5">
+                                <button class="search-button-plus">
+                                    <img class="search-img" src="pic/search.png" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <button id="close-button-plus-thu5-id" class="close-button-plus">
+                                    <img class="search-img" src="pic/cross-button.png" alt="">
+                                </button>
+                                <script>
+                                    $(document).ready(function()
+                                    {
+                                        $("#close-button-plus-thu5-id").click(function()
+                                        {            
+                                            $("#plus-display-thu5-id").fadeOut(600);
+                                        });
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        <div class="display-plus">
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu5" class="checkbox-plus" type="checkbox" name="Thịt bò" value="171">
+                                </div>
+                                <div class="name-food">
+                                    Thịt bò
+                                </div>
+                                <div>
+                                    <input id="input-id-thu5" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>171calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu5" class="checkbox-plus" type="checkbox" name="Thịt gà" value="181">
+                                </div>
+                                <div class="name-food">
+                                    Thịt gà
+                                </div>
+                                <div>
+                                    <input id="input-id-thu5" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>181calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu5" class="checkbox-plus" type="checkbox" name="Cá" value="191">
+                                </div>
+                                <div class="name-food">
+                                    Cá
+                                </div>
+                                <div>
+                                    <input id="input-id-thu5" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>191calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu5" class="checkbox-plus" type="checkbox" name="Rau" value="91">
+                                </div>
+                                <div class="name-food">
+                                    Rau
+                                </div>
+                                <div>
+                                    <input id="input-id-thu5" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>91calo/100gram</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div onclick="addTodothu5();" class="choose-plus">
+                            <img class="plus-img" src="pic/plus-1.png" alt="">
+                        </div>
+                    </div>
+                    <script>
+
+                        // Model section 
+                        // If localstorage has a todos array, then use it
+                        // Otherwise use the default array.
+                        let resultthu5;
+                        let todosthu5;
+                        //localStorage.clear();
+                        const savedresultthu5 = JSON.parse(localStorage.getItem('caloAmountthu5'));
+                        if(savedresultthu5!=null)
+                        {
+                            resultthu5= savedresultthu5;
+                            //alert(savedresult);
+                        }
+                        else
+                        {
+                            resultthu5= 0;
+                        }
+                        //alert('hello');
+                        document.getElementById('result-id-thu5').value ="Tổng: " + resultthu5.toFixed(2) + ' calo';
+                        resultthu5=0;
+                        //alert(result);
+                        //alert('hello');
+                        const savedTodosthu5 = JSON.parse(localStorage.getItem('todosthu5'));
+                        if(Array.isArray(savedTodosthu5))
+                        {
+                            todosthu5=savedTodosthu5;
+                        }
+                        else
+                        {
+                            todosthu5 = 
+                                [
+                                    // {
+                                    //     foodName: 'Thịt bò',
+                                    //     id: 'id1'
+                                    // },
+                                    // {
+                                    //     foodName: 'Thịt heo',
+                                    //     foodValue: 500,
+                                    //     value: 500,
+                                    //     id: 'id5'
+                                    // }
+                                    // {
+                                    //     foodName: 'Thịt gà',
+                                    //     id: 'id3'
+                                    // }
+                                ];
+                        }
+                        renderthu5();
+                
+                        function saveTodosthu5()
+                        {
+                            localStorage.setItem('todosthu5',JSON.stringify(todosthu5));
+                        }
+                        function saveCaloAmountthu5()
+                        {
+                            localStorage.setItem('caloAmountthu5',JSON.stringify(resultthu5));
+                        }
+                        // // Controller section
+                        function addTodothu5()
+                        {
+                            //alert('hello');
+                            for(let i=0; i<1;i++)
+                            {
+                                //alert('hell01');
+                                let checkboxthu5 = document.querySelectorAll("[id='input-id-thu5']");
+                                const textbox = document.querySelectorAll("[id='text-title-thu5']");
+                                for(let i =0;i< textbox.length;i++)
+                                {
+                                    //alert('hell01');
+                                    let flag = true;
+                                    const foodName = textbox[i].name; 
+                                    //alert(checkboxthu5[i].value);
+                                    const foodValue = textbox[i].value;
+                                
+                                    //if(valuethu5==="") valuethu5='0';
+                                    //parseInt(value) += parseInt(0);
+                                    //alert(value);
+                                    const ticked = textbox[i].checked;
+                                    // ticked and we will add it into display
+                                    if(ticked)
+                                    {
+                                        let valuethu5 = checkboxthu5[i].value;
+                                        //alert('hell01');
+                                        for(let j =0;j< todosthu5.length;j++)
+                                        {
+                                            //alert(todosthu5.length);
+                                            //alert(todosthu5[i].foodName);
+                                            //alert(foodName);
+                                            if(todosthu5[j].foodName === foodName)
+                                            {
+                                                flag=false;
+                                                //alert('bạn đã chọn thực phẩm này rồi :v');
+                                                break;
+                                            }
+                                        }
+                                        if(flag === true)
+                                        {
+                                            //alert('render');
+                                            createTodothu5(foodName,foodValue,valuethu5,i);
+                
+                                            renderthu5();
+                                        }
+                
+                                    }
+                                }
+                            }
+                            for(let i = 0;i < todosthu5.length;i++)
+                            {
+                                resultthu5+=parseFloat(todosthu5[i].valuethu5)/parseFloat(100) *parseFloat(todosthu5[i].foodValue);
+                            }
+                            document.getElementById('result-id-thu5').value ="Tổng: " + resultthu5.toFixed(2) + " calo";
+                            saveCaloAmountthu5();
+                            //alert(result);
+                            resultthu5=0;
+                        }
+                        // Create a todo
+                        function createTodothu5(foodName,foodValue,valuethu5,i)
+                        {
+                            //alert('hello00')
+                            let id = ' ' + (new Date().getTime()+i);
+                            todosthu5.push
+                            (
+                                {
+                                    foodName: foodName,
+                                    foodValue: foodValue,
+                                    valuethu5: valuethu5,
+                                    id: id
+                                }
+                            );
+                            saveTodosthu5();
+                        }
+                
+                        function deleteTodothu5(event)
+                        {
+                            const deleteButton = event.target;
+                            const idToDelete = deleteButton.id;
+                
+                            deleteTodoitemthu5(idToDelete);
+                            renderthu5();  
+                            for(let i = 0;i < todosthu5.length;i++)
+                            {
+                                resultthu5+=parseFloat(todosthu5[i].valuethu5)/parseFloat(100) *parseFloat(todosthu5[i].foodValue);
+                            }
+                            document.getElementById('result-id-thu5').value ="Tổng: " + resultthu5.toFixed(2) + " calo";
+                            saveCaloAmountthu5();
+                            resultthu5=0;
+                        }
+                        // // Delete a todo 
+                        function deleteTodoitemthu5(idToDelete)
+                        {
+                            todosthu5 = todosthu5.filter
+                            (
+                                function (todothu5)
+                                {    
+                                    // if the id of this todo match idToDelete,return false
+                                    // for everything else, return true
+                                    if(todothu5.id === idToDelete)
+                                    {
+                                        return false;
+                                    }
+                                    else
+                                    {
+                                        return true;
+                                    }
+                                }
+                            )
+                            saveTodosthu5();
+                        }
+                        // View section
+                        function renderthu5()
+                        {
+                            //alert('hellorender');
+                            // refresh the todo-list (id)
+                            document.getElementById('food-list-thu5').innerHTML = '';
+                            //alert(todosthu5.length);
+                            todosthu5.forEach
+                            (
+                                function (todothu5)
+                               {
+                                let element = document.createElement('div'); 
+                                    element.innerText = '\u00a0' + todothu5.foodName;
+                                    element.className = "cell-element";
+                                    element.style = "background-color: #ccf1fc;"
+                
+                                    let deleteButton = document.createElement('button');
+                                    deleteButton.innerText = 'X';
+                                    deleteButton.className = "delete-button";
+                                    deleteButton.innerHTML = " <img width= 20px style='pointer-events: none;' src = 'pic/cross-button.png'>";
+                                    deleteButton.onclick = deleteTodothu5;
+                                    deleteButton.id = todothu5.id;
+                                    element.appendChild(deleteButton);
+                
+                                    let todoList = document.getElementById('food-list-thu5');
+                                    todoList.appendChild(element);
+                                    //alert('thu2');
+                               }
+                            )
+                        }
+                        //localStorage.clear;
+                        //alert(result);
+                    </script>
+                                    <!-- Thứ 6 -->
+<!-- **************************************************************************** -->
+                    <div class="cell">
+                        <div class="cell-number" style="background-color: #d8cbfd;">
+                            Thứ 6
+                        </div>
+                        <input id="result-id-thu6" type="text" class="calo-amount-box" style="background-color: #d8cbfd;">
+                        <div id="food-list-thu6" class="cell-mention">
+                        </div>
+                        <div class="cell-add">
+                            <button id="plus-button-thu6-id" class="plus-button" style="background-color: #d8cbfd" id="plus-button" type="button">
+                                <img  class="plus-img" src="pic/plus-1.png" alt="">
+                            </button>     
+                            <script>
+                                $(document).ready(function()
+                                {
+                                    $("#plus-button-thu6-id").click(function()
+                                    {      
+                                        let plusdisplayclass = document.getElementsByClassName("plus-display");
+                                        //alert(plusdisplayclass[0].id);
+                                        for(let i =0 ;i < plusdisplayclass.length;i++)
+                                        {
+                                            if(plusdisplayclass[i].id != 'plus-display-thu6-id')plusdisplayclass[i].style.display = 'none';
+                                        }      
+                                        $("#plus-display-thu6-id").fadeToggle(600);
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>    
+                    <div id="plus-display-thu6-id" class="plus-display" style="display: none;">
+                        <div class="task-bar-plus">
+                            <div class="search-bar-section">
+                                <input class="search-bar-plus" type="text" placeholder="Tìm kiếm - Thứ 6">
+                                <button class="search-button-plus">
+                                    <img class="search-img" src="pic/search.png" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <button id="close-button-plus-thu6-id" class="close-button-plus">
+                                    <img class="search-img" src="pic/cross-button.png" alt="">
+                                </button>
+                                <script>
+                                    $(document).ready(function()
+                                    {
+                                        $("#close-button-plus-thu6-id").click(function()
+                                        {            
+                                            $("#plus-display-thu6-id").fadeOut(600);
+                                        });
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        <div class="display-plus">
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu6" class="checkbox-plus" type="checkbox" name="Thịt bò" value="171">
+                                </div>
+                                <div class="name-food">
+                                    Thịt bò
+                                </div>
+                                <div>
+                                    <input id="input-id-thu6" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>171calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu6" class="checkbox-plus" type="checkbox" name="Thịt gà" value="181">
+                                </div>
+                                <div class="name-food">
+                                    Thịt gà
+                                </div>
+                                <div>
+                                    <input id="input-id-thu6" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>181calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu6" class="checkbox-plus" type="checkbox" name="Cá" value="191">
+                                </div>
+                                <div class="name-food">
+                                    Cá
+                                </div>
+                                <div>
+                                    <input id="input-id-thu6" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>191calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu6" class="checkbox-plus" type="checkbox" name="Rau" value="91">
+                                </div>
+                                <div class="name-food">
+                                    Rau
+                                </div>
+                                <div>
+                                    <input id="input-id-thu6" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>91calo/100gram</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div onclick="addTodothu6();" class="choose-plus">
+                            <img class="plus-img" src="pic/plus-1.png" alt="">
+                        </div>
+                    </div>
+                    <script>
+
+                        // Model section 
+                        // If localstorage has a todos array, then use it
+                        // Otherwise use the default array.
+                        let resultthu6;
+                        let todosthu6;
+                        //localStorage.clear();
+                        const savedresultthu6 = JSON.parse(localStorage.getItem('caloAmountthu6'));
+                        if(savedresultthu6!=null)
+                        {
+                            resultthu6= savedresultthu6;
+                            //alert(savedresult);
+                        }
+                        else
+                        {
+                            resultthu6= 0;
+                        }
+                        //alert('hello');
+                        document.getElementById('result-id-thu6').value ="Tổng: "+ resultthu6.toFixed(2) + ' calo';
+                        resultthu6=0;
+                        //alert(result);
+                        //alert('hello');
+                        const savedTodosthu6 = JSON.parse(localStorage.getItem('todosthu6'));
+                        if(Array.isArray(savedTodosthu6))
+                        {
+                            todosthu6=savedTodosthu6;
+                        }
+                        else
+                        {
+                            todosthu6 = 
+                                [
+                                    // {
+                                    //     foodName: 'Thịt bò',
+                                    //     id: 'id1'
+                                    // },
+                                    // {
+                                    //     foodName: 'Thịt heo',
+                                    //     foodValue: 600,
+                                    //     value: 600,
+                                    //     id: 'id6'
+                                    // }
+                                    // {
+                                    //     foodName: 'Thịt gà',
+                                    //     id: 'id3'
+                                    // }
+                                ];
+                        }
+                        renderthu6();
+                
+                        function saveTodosthu6()
+                        {
+                            localStorage.setItem('todosthu6',JSON.stringify(todosthu6));
+                        }
+                        function saveCaloAmountthu6()
+                        {
+                            localStorage.setItem('caloAmountthu6',JSON.stringify(resultthu6));
+                        }
+                        // // Controller section
+                        function addTodothu6()
+                        {
+                            //alert('hello');
+                            for(let i=0; i<1;i++)
+                            {
+                                //alert('hell01');
+                                let checkboxthu6 = document.querySelectorAll("[id='input-id-thu6']");
+                                const textbox = document.querySelectorAll("[id='text-title-thu6']");
+                                for(let i =0;i< textbox.length;i++)
+                                {
+                                    //alert('hell01');
+                                    let flag = true;
+                                    const foodName = textbox[i].name; 
+                                    //alert(checkboxthu6[i].value);
+                                    const foodValue = textbox[i].value;
+                                
+                                    //if(valuethu6==="") valuethu6='0';
+                                    //parseInt(value) += parseInt(0);
+                                    //alert(value);
+                                    const ticked = textbox[i].checked;
+                                    // ticked and we will add it into display
+                                    if(ticked)
+                                    {
+                                        let valuethu6 = checkboxthu6[i].value;
+                                        //alert('hell01');
+                                        for(let j =0;j< todosthu6.length;j++)
+                                        {
+                                            //alert(todosthu6.length);
+                                            //alert(todosthu6[i].foodName);
+                                            //alert(foodName);
+                                            if(todosthu6[j].foodName === foodName)
+                                            {
+                                                flag=false;
+                                                //alert('bạn đã chọn thực phẩm này rồi :v');
+                                                break;
+                                            }
+                                        }
+                                        if(flag === true)
+                                        {
+                                            //alert('render');
+                                            createTodothu6(foodName,foodValue,valuethu6,i);
+                
+                                            renderthu6();
+                                        }
+                
+                                    }
+                                }
+                            }
+                            for(let i = 0;i < todosthu6.length;i++)
+                            {
+                                resultthu6+=parseFloat(todosthu6[i].valuethu6)/parseFloat(100) *parseFloat(todosthu6[i].foodValue);
+                            }
+                            document.getElementById('result-id-thu6').value ="Tổng: " + resultthu6.toFixed(2) + " calo";
+                            saveCaloAmountthu6();
+                            //alert(result);
+                            resultthu6=0;
+                        }
+                        // Create a todo
+                        function createTodothu6(foodName,foodValue,valuethu6,i)
+                        {
+                            //alert('hello00')
+                            let id = ' ' + (new Date().getTime()+i);
+                            todosthu6.push
+                            (
+                                {
+                                    foodName: foodName,
+                                    foodValue: foodValue,
+                                    valuethu6: valuethu6,
+                                    id: id
+                                }
+                            );
+                            saveTodosthu6();
+                        }
+                
+                        function deleteTodothu6(event)
+                        {
+                            const deleteButton = event.target;
+                            const idToDelete = deleteButton.id;
+                
+                            deleteTodoitemthu6(idToDelete);
+                            renderthu6();  
+                            for(let i = 0;i < todosthu6.length;i++)
+                            {
+                                resultthu6+=parseFloat(todosthu6[i].valuethu6)/parseFloat(100) *parseFloat(todosthu6[i].foodValue);
+                            }
+                            document.getElementById('result-id-thu6').value ="Tổng: " + resultthu6.toFixed(2) + " calo";
+                            saveCaloAmountthu6();
+                            resultthu6=0;
+                        }
+                        // // Delete a todo 
+                        function deleteTodoitemthu6(idToDelete)
+                        {
+                            todosthu6 = todosthu6.filter
+                            (
+                                function (todothu6)
+                                {    
+                                    // if the id of this todo match idToDelete,return false
+                                    // for everything else, return true
+                                    if(todothu6.id === idToDelete)
+                                    {
+                                        return false;
+                                    }
+                                    else
+                                    {
+                                        return true;
+                                    }
+                                }
+                            )
+                            saveTodosthu6();
+                        }
+                        // View section
+                        function renderthu6()
+                        {
+                            //alert('hellorender');
+                            // refresh the todo-list (id)
+                            document.getElementById('food-list-thu6').innerHTML = '';
+                            //alert(todosthu6.length);
+                            todosthu6.forEach
+                            (
+                                function (todothu6)
+                               {
+                                let element = document.createElement('div'); 
+                                    element.innerText = '\u00a0' + todothu6.foodName;
+                                    element.className = "cell-element";
+                                    element.style = "background-color: #d8cbfd;"
+                
+                                    let deleteButton = document.createElement('button');
+                                    deleteButton.innerText = 'X';
+                                    deleteButton.className = "delete-button";
+                                    deleteButton.innerHTML = " <img width= 20px style='pointer-events: none;' src = 'pic/cross-button.png'>";
+                                    deleteButton.onclick = deleteTodothu6;
+                                    deleteButton.id = todothu6.id;
+                                    element.appendChild(deleteButton);
+                
+                                    let todoList = document.getElementById('food-list-thu6');
+                                    todoList.appendChild(element);
+                                    //alert('thu2');
+                               }
+                            )
+                        }
+                        //localStorage.clear;
+                        //alert(result);
+                    </script>
+                                    <!-- Thứ 7 -->
+<!-- **************************************************************************** -->
+                    <div class="cell">
+                        <div class="cell-number" style="background-color: rgb(253, 185, 159);">
+                            Thứ 7
+                        </div>
+                        <input id="result-id-thu7" type="text" class="calo-amount-box" style="background-color: rgb(253, 185, 159);">
+                        <div id="food-list-thu7" class="cell-mention">
+                        </div>
+                        <div class="cell-add">
+                            <button id="plus-button-thu7-id" class="plus-button" style="background-color: rgb(253, 185, 159)" id="plus-button" type="button">
+                                <img  class="plus-img" src="pic/plus-1.png" alt="">
+                            </button>     
+                            <script>
+                                $(document).ready(function()
+                                {
+                                    $("#plus-button-thu7-id").click(function()
+                                    {      
+                                        let plusdisplayclass = document.getElementsByClassName("plus-display");
+                                        //alert(plusdisplayclass[0].id);
+                                        for(let i =0 ;i < plusdisplayclass.length;i++)
+                                        {
+                                            if(plusdisplayclass[i].id != 'plus-display-thu7-id')plusdisplayclass[i].style.display = 'none';
+                                        }      
+                                        $("#plus-display-thu7-id").fadeToggle(600);
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>    
+                    <div id="plus-display-thu7-id" class="plus-display" style="display: none;">
+                        <div class="task-bar-plus">
+                            <div class="search-bar-section">
+                                <input class="search-bar-plus" type="text" placeholder="Tìm kiếm - Thứ 7">
+                                <button class="search-button-plus">
+                                    <img class="search-img" src="pic/search.png" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <button id="close-button-plus-thu7-id" class="close-button-plus">
+                                    <img class="search-img" src="pic/cross-button.png" alt="">
+                                </button>
+                                <script>
+                                    $(document).ready(function()
+                                    {
+                                        $("#close-button-plus-thu7-id").click(function()
+                                        {            
+                                            $("#plus-display-thu7-id").fadeOut(600);
+                                        });
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        <div class="display-plus">
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu7" class="checkbox-plus" type="checkbox" name="Thịt bò" value="171">
+                                </div>
+                                <div class="name-food">
+                                    Thịt bò
+                                </div>
+                                <div>
+                                    <input id="input-id-thu7" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>171calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu7" class="checkbox-plus" type="checkbox" name="Thịt gà" value="181">
+                                </div>
+                                <div class="name-food">
+                                    Thịt gà
+                                </div>
+                                <div>
+                                    <input id="input-id-thu7" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>181calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu7" class="checkbox-plus" type="checkbox" name="Cá" value="191">
+                                </div>
+                                <div class="name-food">
+                                    Cá
+                                </div>
+                                <div>
+                                    <input id="input-id-thu7" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>191calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu7" class="checkbox-plus" type="checkbox" name="Rau" value="91">
+                                </div>
+                                <div class="name-food">
+                                    Rau
+                                </div>
+                                <div>
+                                    <input id="input-id-thu7" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>91calo/100gram</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div onclick="addTodothu7();" class="choose-plus">
+                            <img class="plus-img" src="pic/plus-1.png" alt="">
+                        </div>
+                    </div>
+                    <script>
+
+                        // Model section 
+                        // If localstorage has a todos array, then use it
+                        // Otherwise use the default array.
+                        let resultthu7;
+                        let todosthu7;
+                        //localStorage.clear();
+                        const savedresultthu7 = JSON.parse(localStorage.getItem('caloAmountthu7'));
+                        if(savedresultthu7!=null)
+                        {
+                            resultthu7= savedresultthu7;
+                            //alert(savedresult);
+                        }
+                        else
+                        {
+                            resultthu7= 0;
+                        }
+                        //alert('hello');
+                        document.getElementById('result-id-thu7').value ="Tổng: "+  resultthu7.toFixed(2) + ' calo';
+                        resultthu7=0;
+                        //alert(result);
+                        //alert('hello');
+                        const savedTodosthu7 = JSON.parse(localStorage.getItem('todosthu7'));
+                        if(Array.isArray(savedTodosthu7))
+                        {
+                            todosthu7=savedTodosthu7;
+                        }
+                        else
+                        {
+                            todosthu7 = 
+                                [
+                                    // {
+                                    //     foodName: 'Thịt bò',
+                                    //     id: 'id1'
+                                    // },
+                                    // {
+                                    //     foodName: 'Thịt heo',
+                                    //     foodValue: 700,
+                                    //     value: 700,
+                                    //     id: 'id7'
+                                    // }
+                                    // {
+                                    //     foodName: 'Thịt gà',
+                                    //     id: 'id3'
+                                    // }
+                                ];
+                        }
+                        renderthu7();
+                
+                        function saveTodosthu7()
+                        {
+                            localStorage.setItem('todosthu7',JSON.stringify(todosthu7));
+                        }
+                        function saveCaloAmountthu7()
+                        {
+                            localStorage.setItem('caloAmountthu7',JSON.stringify(resultthu7));
+                        }
+                        // // Controller section
+                        function addTodothu7()
+                        {
+                            //alert('hello');
+                            for(let i=0; i<1;i++)
+                            {
+                                //alert('hell01');
+                                let checkboxthu7 = document.querySelectorAll("[id='input-id-thu7']");
+                                const textbox = document.querySelectorAll("[id='text-title-thu7']");
+                                for(let i =0;i< textbox.length;i++)
+                                {
+                                    //alert('hell01');
+                                    let flag = true;
+                                    const foodName = textbox[i].name; 
+                                    //alert(checkboxthu7[i].value);
+                                    const foodValue = textbox[i].value;
+                                
+                                    //if(valuethu7==="") valuethu7='0';
+                                    //parseInt(value) += parseInt(0);
+                                    //alert(value);
+                                    const ticked = textbox[i].checked;
+                                    // ticked and we will add it into display
+                                    if(ticked)
+                                    {
+                                        let valuethu7 = checkboxthu7[i].value;
+                                        //alert('hell01');
+                                        for(let j =0;j< todosthu7.length;j++)
+                                        {
+                                            //alert(todosthu7.length);
+                                            //alert(todosthu7[i].foodName);
+                                            //alert(foodName);
+                                            if(todosthu7[j].foodName === foodName)
+                                            {
+                                                flag=false;
+                                                //alert('bạn đã chọn thực phẩm này rồi :v');
+                                                break;
+                                            }
+                                        }
+                                        if(flag === true)
+                                        {
+                                            //alert('render');
+                                            createTodothu7(foodName,foodValue,valuethu7,i);
+                
+                                            renderthu7();
+                                        }
+                
+                                    }
+                                }
+                            }
+                            for(let i = 0;i < todosthu7.length;i++)
+                            {
+                                resultthu7+=parseFloat(todosthu7[i].valuethu7)/parseFloat(100) *parseFloat(todosthu7[i].foodValue);
+                            }
+                            document.getElementById('result-id-thu7').value ="Tổng: "+  resultthu7.toFixed(2) + " calo";
+                            saveCaloAmountthu7();
+                            //alert(result);
+                            resultthu7=0;
+                        }
+                        // Create a todo
+                        function createTodothu7(foodName,foodValue,valuethu7,i)
+                        {
+                            //alert('hello00')
+                            let id = ' ' + (new Date().getTime()+i);
+                            todosthu7.push
+                            (
+                                {
+                                    foodName: foodName,
+                                    foodValue: foodValue,
+                                    valuethu7: valuethu7,
+                                    id: id
+                                }
+                            );
+                            saveTodosthu7();
+                        }
+                
+                        function deleteTodothu7(event)
+                        {
+                            const deleteButton = event.target;
+                            const idToDelete = deleteButton.id;
+                
+                            deleteTodoitemthu7(idToDelete);
+                            renderthu7();  
+                            for(let i = 0;i < todosthu7.length;i++)
+                            {
+                                resultthu7+=parseFloat(todosthu7[i].valuethu7)/parseFloat(100) *parseFloat(todosthu7[i].foodValue);
+                            }
+                            document.getElementById('result-id-thu7').value ="Tổng: "+  resultthu7.toFixed(2) + " calo";
+                            saveCaloAmountthu7();
+                            resultthu7=0;
+                        }
+                        // // Delete a todo 
+                        function deleteTodoitemthu7(idToDelete)
+                        {
+                            todosthu7 = todosthu7.filter
+                            (
+                                function (todothu7)
+                                {    
+                                    // if the id of this todo match idToDelete,return false
+                                    // for everything else, return true
+                                    if(todothu7.id === idToDelete)
+                                    {
+                                        return false;
+                                    }
+                                    else
+                                    {
+                                        return true;
+                                    }
+                                }
+                            )
+                            saveTodosthu7();
+                        }
+                        // View section
+                        function renderthu7()
+                        {
+                            //alert('hellorender');
+                            // refresh the todo-list (id)
+                            document.getElementById('food-list-thu7').innerHTML = '';
+                            //alert(todosthu7.length);
+                            todosthu7.forEach
+                            (
+                                function (todothu7)
+                               {
+                                let element = document.createElement('div'); 
+                                    element.innerText = '\u00a0' + todothu7.foodName;
+                                    element.className = "cell-element";
+                                    element.style = "background-color: rgb(253, 185, 159);"
+                
+                                    let deleteButton = document.createElement('button');
+                                    deleteButton.innerText = 'X';
+                                    deleteButton.className = "delete-button";
+                                    deleteButton.innerHTML = " <img width= 20px style='pointer-events: none;' src = 'pic/cross-button.png'>";
+                                    deleteButton.onclick = deleteTodothu7;
+                                    deleteButton.id = todothu7.id;
+                                    element.appendChild(deleteButton);
+                
+                                    let todoList = document.getElementById('food-list-thu7');
+                                    todoList.appendChild(element);
+                                    //alert('thu2');
+                               }
+                            )
+                        }
+                        //localStorage.clear;
+                        //alert(result);
+                    </script>
+                                    <!-- Chủ Nhật -->
+<!-- **************************************************************************** -->
+                    <div class="cell">
+                        <div class="cell-number" style="background-color: #f8feb5;">
+                            Chủ Nhật
+                        </div>
+                        <input id="result-id-thu8" type="text" class="calo-amount-box" style="background-color: #f8feb5;">
+                        <div id="food-list-thu8" class="cell-mention">
+                        </div>
+                        <div class="cell-add">
+                            <button id="plus-button-thu8-id" class="plus-button" style="background-color: #f8feb5" id="plus-button" type="button">
+                                <img  class="plus-img" src="pic/plus-1.png" alt="">
+                            </button>     
+                            <script>
+                                $(document).ready(function()
+                                {
+                                    $("#plus-button-thu8-id").click(function()
+                                    {      
+                                        let plusdisplayclass = document.getElementsByClassName("plus-display");
+                                        //alert(plusdisplayclass[0].id);
+                                        for(let i =0 ;i < plusdisplayclass.length;i++)
+                                        {
+                                            if(plusdisplayclass[i].id != 'plus-display-thu8-id')plusdisplayclass[i].style.display = 'none';
+                                        }      
+                                        $("#plus-display-thu8-id").fadeToggle(600);
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>    
+                    <div id="plus-display-thu8-id" class="plus-display" style="display: none;">
+                        <div class="task-bar-plus">
+                            <div class="search-bar-section">
+                                <input class="search-bar-plus" type="text" placeholder="Tìm kiếm - Thứ 8">
+                                <button class="search-button-plus">
+                                    <img class="search-img" src="pic/search.png" alt="">
+                                </button>
+                            </div>
+                            <div>
+                                <button id="close-button-plus-thu8-id" class="close-button-plus">
+                                    <img class="search-img" src="pic/cross-button.png" alt="">
+                                </button>
+                                <script>
+                                    $(document).ready(function()
+                                    {
+                                        $("#close-button-plus-thu8-id").click(function()
+                                        {            
+                                            $("#plus-display-thu8-id").fadeOut(600);
+                                        });
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        <div class="display-plus">
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu8" class="checkbox-plus" type="checkbox" name="Thịt bò" value="171">
+                                </div>
+                                <div class="name-food">
+                                    Thịt bò
+                                </div>
+                                <div>
+                                    <input id="input-id-thu8" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>171calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu8" class="checkbox-plus" type="checkbox" name="Thịt gà" value="181">
+                                </div>
+                                <div class="name-food">
+                                    Thịt gà
+                                </div>
+                                <div>
+                                    <input id="input-id-thu8" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>181calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu8" class="checkbox-plus" type="checkbox" name="Cá" value="191">
+                                </div>
+                                <div class="name-food">
+                                    Cá
+                                </div>
+                                <div>
+                                    <input id="input-id-thu8" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>191calo/100gram</p>
+                                </div>
+                            </div> 
+                            <div class="element-plus">
+                                <div>
+                                    <input id="text-title-thu8" class="checkbox-plus" type="checkbox" name="Rau" value="91">
+                                </div>
+                                <div class="name-food">
+                                    Rau
+                                </div>
+                                <div>
+                                    <input id="input-id-thu8" class="gram-plus" type="text" placeholder="nhap so gram">
+                                </div>
+                                <div class="calo-gram">
+                                    <p>91calo/100gram</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div onclick="addTodothu8();" class="choose-plus">
+                            <img class="plus-img" src="pic/plus-1.png" alt="">
+                        </div>
+                    </div>
+                    <script>
+
+                        // Model section 
+                        // If localstorage has a todos array, then use it
+                        // Otherwise use the default array.
+                        let resultthu8;
+                        let todosthu8;
+                        //localStorage.clear();
+                        const savedresultthu8 = JSON.parse(localStorage.getItem('caloAmountthu8'));
+                        if(savedresultthu8!=null)
+                        {
+                            resultthu8= savedresultthu8;
+                            //alert(savedresult);
+                        }
+                        else
+                        {
+                            resultthu8= 0;
+                        }
+                        //alert('hello');
+                        document.getElementById('result-id-thu8').value ="Tổng: "+  resultthu8.toFixed(2) + ' calo';
+                        resultthu8=0;
+                        //alert(result);
+                        //alert('hello');
+                        const savedTodosthu8 = JSON.parse(localStorage.getItem('todosthu8'));
+                        if(Array.isArray(savedTodosthu8))
+                        {
+                            todosthu8=savedTodosthu8;
+                        }
+                        else
+                        {
+                            todosthu8 = 
+                                [
+                                    // {
+                                    //     foodName: 'Thịt bò',
+                                    //     id: 'id1'
+                                    // },
+                                    // {
+                                    //     foodName: 'Thịt heo',
+                                    //     foodValue: 800,
+                                    //     value: 800,
+                                    //     id: 'id8'
+                                    // }
+                                    // {
+                                    //     foodName: 'Thịt gà',
+                                    //     id: 'id3'
+                                    // }
+                                ];
+                        }
+                        renderthu8();
+                
+                        function saveTodosthu8()
+                        {
+                            localStorage.setItem('todosthu8',JSON.stringify(todosthu8));
+                        }
+                        function saveCaloAmountthu8()
+                        {
+                            localStorage.setItem('caloAmountthu8',JSON.stringify(resultthu8));
+                        }
+                        // // Controller section
+                        function addTodothu8()
+                        {
+                            //alert('hello');
+                            for(let i=0; i<1;i++)
+                            {
+                                //alert('hell01');
+                                let checkboxthu8 = document.querySelectorAll("[id='input-id-thu8']");
+                                const textbox = document.querySelectorAll("[id='text-title-thu8']");
+                                for(let i =0;i< textbox.length;i++)
+                                {
+                                    //alert('hell01');
+                                    let flag = true;
+                                    const foodName = textbox[i].name; 
+                                    //alert(checkboxthu8[i].value);
+                                    const foodValue = textbox[i].value;
+                                
+                                    //if(valuethu8==="") valuethu8='0';
+                                    //parseInt(value) += parseInt(0);
+                                    //alert(value);
+                                    const ticked = textbox[i].checked;
+                                    // ticked and we will add it into display
+                                    if(ticked)
+                                    {
+                                        let valuethu8 = checkboxthu8[i].value;
+                                        //alert('hell01');
+                                        for(let j =0;j< todosthu8.length;j++)
+                                        {
+                                            //alert(todosthu8.length);
+                                            //alert(todosthu8[i].foodName);
+                                            //alert(foodName);
+                                            if(todosthu8[j].foodName === foodName)
+                                            {
+                                                flag=false;
+                                                //alert('bạn đã chọn thực phẩm này rồi :v');
+                                                break;
+                                            }
+                                        }
+                                        if(flag === true)
+                                        {
+                                            //alert('render');
+                                            createTodothu8(foodName,foodValue,valuethu8,i);
+                
+                                            renderthu8();
+                                        }
+                
+                                    }
+                                }
+                            }
+                            for(let i = 0;i < todosthu8.length;i++)
+                            {
+                                resultthu8+=parseFloat(todosthu8[i].valuethu8)/parseFloat(100) *parseFloat(todosthu8[i].foodValue);
+                            }
+                            document.getElementById('result-id-thu8').value ="Tổng: "+  resultthu8.toFixed(2) + " calo";
+                            saveCaloAmountthu8();
+                            //alert(result);
+                            resultthu8=0;
+                        }
+                        // Create a todo
+                        function createTodothu8(foodName,foodValue,valuethu8,i)
+                        {
+                            //alert('hello00')
+                            let id = ' ' + (new Date().getTime()+i);
+                            todosthu8.push
+                            (
+                                {
+                                    foodName: foodName,
+                                    foodValue: foodValue,
+                                    valuethu8: valuethu8,
+                                    id: id
+                                }
+                            );
+                            saveTodosthu8();
+                        }
+                
+                        function deleteTodothu8(event)
+                        {
+                            const deleteButton = event.target;
+                            const idToDelete = deleteButton.id;
+                
+                            deleteTodoitemthu8(idToDelete);
+                            renderthu8();  
+                            for(let i = 0;i < todosthu8.length;i++)
+                            {
+                                resultthu8+=parseFloat(todosthu8[i].valuethu8)/parseFloat(100) *parseFloat(todosthu8[i].foodValue);
+                            }
+                            document.getElementById('result-id-thu8').value = "Tổng: "+ resultthu8.toFixed(2) + " calo";
+                            saveCaloAmountthu8();
+                            resultthu8=0;
+                        }
+                        // // Delete a todo 
+                        function deleteTodoitemthu8(idToDelete)
+                        {
+                            todosthu8 = todosthu8.filter
+                            (
+                                function (todothu8)
+                                {    
+                                    // if the id of this todo match idToDelete,return false
+                                    // for everything else, return true
+                                    if(todothu8.id === idToDelete)
+                                    {
+                                        return false;
+                                    }
+                                    else
+                                    {
+                                        return true;
+                                    }
+                                }
+                            )
+                            saveTodosthu8();
+                        }
+                        // View section
+                        function renderthu8()
+                        {
+                            //alert('hellorender');
+                            // refresh the todo-list (id)
+                            document.getElementById('food-list-thu8').innerHTML = '';
+                            //alert(todosthu8.length);
+                            todosthu8.forEach
+                            (
+                                function (todothu8)
+                               {
+                                let element = document.createElement('div'); 
+                                    element.innerText = '\u00a0' + todothu8.foodName;
+                                    element.className = "cell-element";
+                                    element.style = "background-color: #f8feb5;"
+                
+                                    let deleteButton = document.createElement('button');
+                                    deleteButton.innerText = 'X';
+                                    deleteButton.className = "delete-button";
+                                    deleteButton.innerHTML = " <img width= 20px style='pointer-events: none;' src = 'pic/cross-button.png'>";
+                                    deleteButton.onclick = deleteTodothu8;
+                                    deleteButton.id = todothu8.id;
+                                    element.appendChild(deleteButton);
+                
+                                    let todoList = document.getElementById('food-list-thu8');
+                                    todoList.appendChild(element);
+                                    //alert('thu2');
+                               }
+                            )
+                        }
+                        //localStorage.clear;
+                        //alert(result);
+                    </script>
+                </div>
             </section>
         </div>
-    </body>
-</html>
-        
+
+    <!-- <script>
+
+        // Model section 
+        // If localstorage has a todos array, then use it
+        // Otherwise use the default array.
+        let resultthu3;
+        let todosthu3;
+        //localStorage.clear();
+        const savedresultthu3 = JSON.parse(localStorage.getItem('caloAmountthu3'));
+        if(savedresultthu3!=null)
+        {
+            resultthu3= savedresultthu3;
+            //alert(savedresult);
+        }
+        else
+        {
+            resultthu3= 0;
+        }
+        //alert('hello');
+        document.getElementById('result-id-thu3').value = resultthu3.toFixed(2) + ' calo';
+        resultthu3=0;
+        //alert(result);
+        //alert('hello');
+        const savedTodosthu3 = JSON.parse(localStorage.getItem('todosthu3'));
+        if(Array.isArray(savedTodosthu3))
+        {
+            todosthu3=savedTodosthu3;
+        }
+        else
+        {
+            todosthu3 = 
+                [
+                    // {
+                    //     foodName: 'Thịt bò',
+                    //     id: 'id1'
+                    // },
+                    // {
+                    //     foodName: 'Thịt heo',
+                    //     foodValue: 200,
+                    //     value: 200,
+                    //     id: 'id2'
+                    // }
+                    // {
+                    //     foodName: 'Thịt gà',
+                    //     id: 'id3'
+                    // }
+                ];
+        }
+        renderthu3();
+
+        function saveTodosthu3()
+        {
+            localStorage.setItem('todosthu3',JSON.stringify(todosthu3));
+        }
+        function saveCaloAmountthu3()
+        {
+            localStorage.setItem('caloAmountthu3',JSON.stringify(resultthu3));
+        }
+        // // Controller section
+        function addTodothu3()
+        {
+            //alert('hello');
+            for(let i=0; i<1;i++)
+            {
+                //alert('hell01');
+                const checkbox = document.querySelectorAll("[id='input-id']");
+                const textbox = document.querySelectorAll("[id='text-title']");
+                for(let i =0;i< textbox.length;i++)
+                {
+                    //alert('hell01');
+                    let flag = true;
+                    const foodName = textbox[i].name; 
+                    let value = checkbox[i].value;
+                    const foodValue = textbox[i].value;
+                
+                    if(value=="") value='0';
+                    //parseInt(value) += parseInt(0);
+                    //alert(value);
+                    const ticked = textbox[i].checked;
+                    // ticked and we will add it into display
+                    if(ticked)
+                    {
+                        //alert('hell01');
+                        for(let j =0;j< todosthu3.length;j++)
+                        {
+                            // alert(todos[i].foodName);
+                            //alert(foodName);
+                            if(todosthu3[j].foodName === foodName)
+                            {
+                                flag=false;
+                                //alert('bạn đã chọn thực phẩm này rồi :v');
+                                break;
+                            }
+                        }
+                        if(flag === true)
+                        {
+                            //alert('hell01');
+                            createTodothu3(foodName,foodValue,value,i);
+
+                            renderthu3();
+                        }
+
+                    }
+                }
+            }
+            for(let i = 0;i < todosthu3.length;i++)
+            {
+                resultthu3+=parseFloat(todosthu3[i].value)/parseFloat(100) *parseFloat(todosthu3[i].foodValue);
+            }
+            document.getElementById('result-id-thu3').value = resultthu3.toFixed(2) + " calo";
+            saveCaloAmountthu3();
+            //alert(result);
+            resultthu3=0;
+        }
+        // Create a todo
+        function createTodothu3(foodName,foodValue,value,i)
+        {
+            let id = ' ' + (new Date().getTime()+i);
+            todosthu3.push
+            (
+                {
+                    foodName: foodName,
+                    foodValue: foodValue,
+                    value: value,
+                    id: id
+                }
+            );
+            saveTodosthu3();
+        }
+
+        function deleteTodothu3(event)
+        {
+            const deleteButton = event.target;
+            const idToDelete = deleteButton.id;
+
+            deleteTodoitemthu3(idToDelete);
+            render();  
+            for(let i = 0;i < todosthu3.length;i++)
+            {
+                resultthu3+=parseFloat(todos[i].value)/parseFloat(100) *parseFloat(todosthu3[i].foodValue);
+            }
+            document.getElementById('result-id-thu3').value = resultthu3.toFixed(2) + " calo";
+            saveCaloAmountthu3();
+            resultthu3=parseFloat(0);
+        }
+        // // Delete a todo 
+        function deleteTodoitemthu3(idToDelete)
+        {
+            todosthu3 = todosthu3.filter
+            (
+                function (todo)
+                {    
+                    // if the id of this todo match idToDelete,return false
+                    // for everything else, return true
+                    if(todo.id === idToDelete)
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+            )
+            saveTodosthu3();
+        }
+        // View section
+        function renderthu3()
+        {
+            //alert('hello');
+            // refresh the todo-list (id)
+            document.getElementById('food-list-thu3').innerHTML = '';
+            
+            todosthu3.forEach
+            (
+                function (todo)
+               {
+                    let element = document.createElement('div'); 
+                    element.innerText = todo.foodName;
+                    element.className = "cell-element";
+
+                    let deleteButton = document.createElement('button');
+                    deleteButton.innerText = 'X';
+                    deleteButton.style = "margin-left: 12px;width:20px;leight:20px;";
+                    deleteButton.onclick = deleteTodothu3;
+                    deleteButton.id = todo.id;
+                    element.appendChild(deleteButton);
+
+                    let todoList = document.getElementById('food-list-thu3');
+                    element.style = "background-color: white;"
+                    todoList.appendChild(element);
+               }
+            )
+        }
+        //alert(result);
+    </script> -->
+</body>
